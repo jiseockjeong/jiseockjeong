@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campari: The Iconic Red Italian Bitter - Campari</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            setTimeout(function() {
+                $(".img1").css("background", "url(./images/mo11.png)")
+                $(".img2").css("background", "url(./images/mo12.png)")
+                $(".img3").css("background", "url(./images/mo13.png)")
+                $(".img4").css("background", "url(./images/mo14.png)")
+                $(".img5").css("background", "url(./images/mo15.png)")
+                $(".img6").css("background", "url(./images/mo16.png)")
+            }, 4500);
+
+            setTimeout(function() {
+                $(".img1").css("background", "url(./images/mo21.png)")
+                $(".img2").css("background", "url(./images/mo22.png)")
+                $(".img3").css("background", "url(./images/mo23.png)")
+                $(".img4").css("background", "url(./images/mo24.png)")
+                $(".img5").css("background", "url(./images/mo25.png)")
+                $(".img6").css("background", "url(./images/mo26.png)")
+            }, 14500);
+            setTimeout(function() {
+                $(".img1").css("background", "url(./images/mo1.png)")
+                $(".img2").css("background", "url(./images/mo2.png)")
+                $(".img3").css("background", "url(./images/mo3.png)")
+                $(".img4").css("background", "url(./images/mo4.png)")
+                $(".img5").css("background", "url(./images/mo5.png)")
+                $(".img6").css("background", "url(./images/mo6.png)")
+            }, 24500);
+            setInterval(function() {
+                setTimeout(function() {
+                    $(".img1").css("background", "url(./images/mo11.png)")
+                    $(".img2").css("background", "url(./images/mo12.png)")
+                    $(".img3").css("background", "url(./images/mo13.png)")
+                    $(".img4").css("background", "url(./images/mo14.png)")
+                    $(".img5").css("background", "url(./images/mo15.png)")
+                    $(".img6").css("background", "url(./images/mo16.png)")
+                }, 4500);
+
+                setTimeout(function() {
+                    $(".img1").css("background", "url(./images/mo21.png)")
+                    $(".img2").css("background", "url(./images/mo22.png)")
+                    $(".img3").css("background", "url(./images/mo23.png)")
+                    $(".img4").css("background", "url(./images/mo24.png)")
+                    $(".img5").css("background", "url(./images/mo25.png)")
+                    $(".img6").css("background", "url(./images/mo26.png)")
+                }, 14500);
+
+                setTimeout(function() {
+                    $(".img1").css("background", "url(./images/mo1.png)")
+                    $(".img2").css("background", "url(./images/mo2.png)")
+                    $(".img3").css("background", "url(./images/mo3.png)")
+                    $(".img4").css("background", "url(./images/mo4.png)")
+                    $(".img5").css("background", "url(./images/mo5.png)")
+                    $(".img6").css("background", "url(./images/mo6.png)")
+                }, 24500);
+            }, 30000);
+        });
+    </script>
+    <script>
+        var slide = 0;
+        $(function() {
+            $(".right").click(function() {
+
+                if (slide < 2) {
+                    slide++;
+                } else {
+                    slide = 0;
+                }
+
+
+
+                if (slide == 1) {
+                    $(".img-area ul li:nth-child(1) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(3) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "-1150px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(2) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Casktale");
+                    }, 1500);
+
+                } else if (slide == 2) {
+                    $(".img-area ul li:nth-child(2) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(1) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "-2300px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(3) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Soda");
+                    }, 1500);
+
+                } else if (slide == 0) {
+                    $(".img-area ul li:nth-child(3) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(2) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "0px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(1) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Campari");
+                    }, 1500);
+
+                }
+
+
+
+            });
+
+
+            $(".left").click(function() {
+
+                if (slide > 0) {
+                    slide--;
+                } else {
+                    slide = 2;
+                }
+
+                if (slide == 0) {
+                    $(".img-area ul li:nth-child(3) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(2) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "0px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(1) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Campari");
+                    }, 1500);
+
+                } else if (slide == 1) {
+                    $(".img-area ul li:nth-child(1) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(3) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "-1150px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(2) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Casktale");
+                    }, 1500);
+
+                } else if (slide == 2) {
+                    $(".img-area ul li:nth-child(1) img").css("transform", "scale(0.5)");
+                    $(".img-area ul li:nth-child(2) img").css("transform", "scale(0.5)");
+                    setTimeout(function() {
+                        $(".img-area ul").animate({
+                            "left": "-2300px"
+                        });
+                    }, 500);
+
+                    setTimeout(function() {
+                        $(".img-area ul li:nth-child(3) img").css("transform", "scale(1)");
+                        $(".product .text-area h3").text("Soda");
+                    }, 1500);
+
+                }
+
+
+
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $(".milano").click(function() {
+                $(".box").css("left", "960px");
+                $(".box .text-area").addClass("on");
+                $(".box .text-area h3").text("Milano")
+            });
+
+            $(".galleria").click(function() {
+                $(".box").css("left", "0px");
+                $(".box .text-area").removeClass("on");
+                $(".box .text-area h3").text("Galleria")
+            });
+        });
+    </script>
+    <script>
+    $(function(){
+        $("nav ul li:nth-child(1)").click(function(){
+                
+                $("body,html").animate({
+                    scrollTop:0
+                },200)
+            });
+        $("nav ul li:nth-child(2)").click(function(){
+                
+                $("body,html").animate({
+                    scrollTop:854
+                },200)
+            });
+        $("nav ul li:nth-child(3)").click(function(){
+                
+                $("body,html").animate({
+                    scrollTop:2054
+                },200)
+            });
+        $("nav ul li:nth-child(4)").click(function(){
+                
+                $("body,html").animate({
+                    scrollTop:3262
+                },200)
+            });
+        $(window).scroll(function(){
+               
+                if($(this).scrollTop()>200){
+                   $(".top").fadeIn("fast");
+                   }
+                else{
+                   $(".top").fadeOut("fast");
+                   }
+                
+            });
+            
+            $(".top").click(function(){
+                
+                $("body,html").animate({
+                    scrollTop:0
+                },200)
+            });
+    });
+    </script>
+</head>
+
+<body>
+   <div class ="top">
+       <span>TOP</span>
+   </div>
+    <div class="wrap">
+        <header>
+            <div class="inner clearfix">
+                <div class="logo">
+                    <a href="#none">
+                        <img src="images/logo.png" alt="campari logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="clearfix">
+                        <li>Calendar</li>
+                        <li>Product</li>
+                        <li>Cocktail</li>
+                        <li>Visit Us</li>
+                        <li><a href="../campari.pdf" target="_blank">PDF</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="calendar">
+            <div class="back">
+                <div class="back-img img1"></div>
+                <div class="back-img img2"></div>
+                <div class="back-img img3"></div>
+                <div class="back-img img4"></div>
+                <div class="back-img img5"></div>
+                <div class="back-img img6"></div>
+            </div>
+            <div class="black"></div>
+            <div class="inner">
+                <div class="text-area">
+                    <span>Calendar</span>
+                    <h2>Eva Green</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="button">
+                        <a href="#">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product">
+            <div class="inner">
+                <div class="img-area">
+                    <ul>
+                        <li><img src="images/campari.jpg" alt="campari"></li>
+                        <li><img src="images/casktale.jpg" alt="casktale"></li>
+                        <li><img src="images/soda.jpg" alt="soda"></li>
+                    </ul>
+                    <div class="remote">
+                        <div class="left">
+                            <img src="./images/button.png" alt="left">
+                        </div>
+                        <div class="right">
+                            <img src="./images/button2.png" alt="right">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-area">
+                    <h3>Campari</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="button">
+                        <a href="#">Discover more</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="cocktail">
+            <div class="inner">
+                <div class="img-area">
+                    <img src="images/negroni.jpg" alt="negroni">
+                </div>
+                <div class="text-area">
+                    <span>Cocktail</span>
+                    <h3>Negroni</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="button">
+                        <a href="#">Discover more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cocktail2">
+            <div class="inner">
+                <div class="text-area">
+                    <span>Cocktail</span>
+                    <h3>Campari Spritz</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="button">
+                        <a href="#">Discover more</a>
+                    </div>
+                </div>
+                <div class="img-area">
+                    <img src="images/spritz.jpg" alt="spritz">
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gal-list">
+                <div class="galleria"></div>
+                <div class="milano"></div>
+                <div class="box">
+                    <div class="text-area">
+                        <span>Gallery</span>
+                        <h3>Galleria</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="button">
+                            <a href="#">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="util-area">
+                <div class="logo"><img src="./images/logo3.png" alt="campari logo"></div>
+                <span>DRINK CAMPARI RESPONSIBLY</span>
+                <div class="sns-area">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/face.png" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/insta.png" alt="instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/twitter.png" alt="twiiter"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body></html>

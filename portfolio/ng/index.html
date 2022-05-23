@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>내셔널 지오그래픽</title>    
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            if ($(window).width() < 799) {
+                $('#fullpage').removeAttr('id');
+            }
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage','6thPage','7thPage'],
+                sectionsColor: ['#222', '#222', '#222', '#222', '#222', '#222', '#fff'],
+                navigation: true,
+                navigationTooltips: ['First page', 'Second page', 'Third page', '4th page', '5th page', '6th page', '7th page and last page'],
+                slidesNavigation:true,
+                menu:'#menu',
+
+                
+
+                'afterLoad': function(index, nextIndex, direction) {
+                    if (nextIndex == 1) {
+                        $(window).load(function() {
+                            $("#section0").addClass("on");
+                        });
+                    } else if (nextIndex == 2) {
+                        $("#section1").addClass("on");
+                    } else if (nextIndex == 3) {
+                        $("#section2").addClass("on");
+                    } else if (nextIndex == 4) {
+                        $("#section3 #slide1").addClass("on");
+                    } else if (nextIndex == 5) {
+                        $("#section4").addClass("on");
+                    } else if (nextIndex == 6) {
+                        $("#section5").addClass("on");
+                    } else if (nextIndex == 7) {
+                        $("#section5").addClass("on");
+                    } else if (nextIndex == 8) {
+
+                    }
+                }
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+
+            $(".animal").mouseover(function() {
+                $(".animal2").css("transform", "scale(1.1)");
+            });
+
+            $(".animal").mouseout(function() {
+                $(".animal2").css("transform", "scale(1.0)");
+            });
+
+            $(".model").mouseover(function() {
+                $(".model2").css("transform", "scale(1.1)");
+            });
+
+            $(".model").mouseout(function() {
+                $(".model2").css("transform", "scale(1.0)");
+            });
+            $(".place").mouseover(function() {
+                $(".place2").css("transform", "scale(1.1)");
+            });
+
+            $(".place").mouseout(function() {
+                $(".place2").css("transform", "scale(1.0)");
+            });
+
+            $(".camera").mouseover(function() {
+                $(".camera2").css("transform", "scale(1.1)");
+            });
+
+            $(".camera").mouseout(function() {
+                $(".camera2").css("transform", "scale(1.0)");
+            });
+            //------------------------컨트2---------------------------
+            $("#tab02").click(function() {
+                $(".pick").css("transform", "translateX(-100%)");
+            });
+            $("#tab01").click(function() {
+                $(".pick").css("transform", "translateX(-200%)");
+            });
+            $("#tab03").click(function() {
+                $(".pick").css("transform", "translateX(0%)");
+            });
+            $("#tab04").click(function() {
+                $(".pick").css("transform", "translateX(100%)");
+            });
+
+            //            -------------------컨트3------------------------
+
+            $(".news1").mouseover(function() {
+                $("#section4 #slide1").stop().css("background", "url(./images/news1.jpg) no-repeat center/cover");
+            });
+
+            $(".news2").mouseover(function() {
+                $("#section4 #slide1").stop().css("background", "url(./images/news2.jpg) no-repeat center/cover");
+            });
+
+            $(".news3").mouseover(function() {
+                $("#section4 #slide1").stop().css("background", "url(./images/news3.jpg) no-repeat center/cover");
+            });
+
+            $(".news4").mouseover(function() {
+                $("#section4 #slide2").stop().css("background", "url(./images/news4.jpg) no-repeat center/cover");
+            });
+
+            $(".news5").mouseover(function() {
+                $("#section4 #slide2").stop().css("background", "url(./images/news5.jpg) no-repeat center/cover");
+            });
+            $(".news6").mouseover(function() {
+                $("#section4 #slide2").stop().css("background", "url(./images/news6.jpg) no-repeat center/cover");
+            });
+
+            $(".news7").mouseover(function() {
+                $("#section4 #slide3").stop().css("background", "url(./images/news7.jpg) no-repeat center/cover");
+            });
+
+            $(".news8").mouseover(function() {
+                $("#section4 #slide3").stop().css("background", "url(./images/news8.jpg) no-repeat center/cover");
+            });
+            $(".news9").mouseover(function() {
+                $("#section4 #slide3").stop().css("background", "url(./images/news9.jpg) no-repeat center/cover");
+            });
+
+            $(".news").mouseover(function() {
+                $(this).stop().animate({
+                    "top": "-10px"
+                }, "slow");
+            });
+
+            $(".news").mouseout(function() {
+                $(this).stop().animate({
+                    "top": "0px"
+                }, "slow");
+            });
+
+            $(".play-btn").mouseover(function() {
+                $(".play-btn").attr("src", "./images/yplay-btn.png");
+            });
+
+            $(".play-btn").mouseout(function() {
+                $(".play-btn").attr("src", "./images/play-btn.png");
+            });
+
+
+        });
+
+    </script>
+    <script>
+        $(function() {
+
+            $(".active").click(function() {
+                $(".side-bar").css("right", "-600px")
+            });
+
+            $(".open").click(function() {
+                $(".side-bar").css("right", "0px")
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function() {
+
+            var check = true;
+            $(".open").click(function() {
+
+                if (check) {
+                    $(".side-bar").animate({
+                        right: 0
+                    });
+                    check = false;
+                } else {
+
+                    $(".side-bar").animate({
+                        right: -500
+                    });
+                    check = true;
+                }
+
+            });
+
+
+
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.open').click(function() {
+
+                $('.open').toggleClass('active');
+            });
+            
+        });
+
+    </script>
+
+</head>
+
+<body>
+    
+    <header id="header">
+        <div class="inner clearfix">
+            <div class="logo-area clearfix">
+                <h1 class="logo"><img src="./images/nglogow.png"></h1>
+            </div>
+            <nav>
+                <ul class="head">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">BRAND</a></li>
+                    <li data-menuanchor="3rdPage"><a href="#3rdPage">CHANNEL</a></li>
+                    <li data-menuanchor="4thPage"><a href="#4thPage">VIDEO</a></li>
+                    <li data-menuanchor="5thPage"><a href="#5thPage">NEWS</a></li>
+                    <li data-menuanchor="6thPage"><a href="#6thPage">MAGAZINE</a></li>
+                    <li data-menuanchor="7thPage"><a href="#7thPage">STORE</a></li>
+                </ul>
+            </nav>
+            <a class="open">
+                <span></span>
+            </a>
+        </div>
+        <div class="side-bar">
+            <ul>
+                <li><a href="#none">HOME</a></li>
+                <li><a href="#none">ABOUT US</a></li>
+                <li><a href="#none">NOTICE</a></li>
+                <li><a href="#none">PROMOTION</a></li>
+                <li><a href="#none">INQUIRE</a></li>
+                <li><a href="#none">BROADCAST</a></li>
+                <li><a href="#none">SCHEDULE</a></li>
+            </ul>
+            <div class="sns-area">
+                <ul>
+                    <li><a href="#none"><img src="images/youtube.png"></a></li>
+                    <li><a href="#none"><img src="images/insta.png"></a></li>
+                    <li><a href="#none"><img src="images/facebook.png"></a></li>
+                </ul>
+            </div>
+            <h1 class="logo2"><img src="./images/nglogow.png"></h1>
+            <div class="copyright">
+                <span>COPYRIGHT © 2018 NATIONAL GEOGRAPHIC<br>
+                    KOREA LLT. ALL RIGHT RESERVED</span>
+            </div>
+            
+
+            <div class="close"></div>
+        </div>
+    </header>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div class="cont_box">
+                <div class="back1"></div>
+                <div class="sec1-1 animate__animated animate__fadeInUp">
+                    <h1 class="logo2"><img src="./images/nglogow.png"></h1>
+                    <span> 내셔널지오그래픽협회는 탐험과 환경 보호를 통해 지구와 인류에 공헌하고 있는 세계 최대의 비영리 단체입니다. 매년 전세계의 수많은 연구와 환경 보호 프로젝트를 지원하고 있으며, 다방면의 교육 캠페인 등을 통해 미래 세대에게 영감과 비전을 심어주고 있습니다.</span>
+                </div>
+                <div class="sec1-2 animate__animated animate__fadeInRight">
+                    <strong>About Us</strong>
+                    <span>내셔널지오그래픽은 모든 수익의 27%는 내셔널지오그래픽 협회의 과학 및 탐험 프로젝트, 환경보호에 지원됩니다. TV를 시청하고, 매거진을 구독하고, 제품을 구입하는 것은 단순한 소비를 넘어 내셔널지오그래픽의 지구와 인류를 위한 여정을 함께하는 것 입니다.</span>
+                    <a class="button">더보기</a>
+                </div>
+                <div class="sec1-3">
+                    <ul>
+                        <li class="youtube"><a href="#none"><img src="./images/youtube.png"></a></li>
+                        <li class="insta"><a href="#none"><img src="./images/insta.png"></a></li>
+                        <li class="facebook"><a href="#none"><img src="./images/facebook.png"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="cont1 cont">
+                <div class="inner">
+                    <div class="sec2-1">
+                        <div class="animal sec2-list">
+                            <div class="sec2-txt">
+                                <strong>채널</strong>
+
+                            </div>
+                        </div>
+                        <div class="model sec2-list">
+                            <div class="sec2-txt">
+                                <strong>어패럴</strong>
+
+                            </div>
+                        </div>
+                        <div class="place sec2-list">
+                            <div class="sec2-txt">
+                                <strong>탐험</strong>
+
+                            </div>
+                        </div>
+                        <div class="camera sec2-list">
+                            <div class="sec2-txt">
+                                <strong>매거진</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-title">
+                    <strong>BRAND</strong></div>
+                    <ul>
+                        <li><img src="./images/list1.png" class="animal2"></li>
+                        <li><img src="./images/list4.png" class="model2"></li>
+                        <li><img src="./images/list3.png" class="place2"></li>
+                        <li><img src="./images/list2.jpg" class="camera2"></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="cont2">
+                    <div class="m-title">
+                    <strong>CHANNEL</strong></div>
+                    <div class="tab_content">
+                        <input type="radio" name="tabmenu" id="tab01" checked>
+                        <label for="tab01"></label><input type="radio" name="tabmenu" id="tab02"><label for="tab02"></label><input type="radio" name="tabmenu" id="tab03"><label for="tab03"></label><input type="radio" name="tabmenu" id="tab04"><label for="tab04"></label>
+                        <div class="pick"></div>
+                        <div class="conbox conbox1">
+                            <img src="./images/channel1.jpg">
+                            <div class="conbox-txt">
+                                <strong>상어떼의 습격을 받은 혹등고래</strong>
+                                <span>백상아리 ‘헬렌’이 이동 중인 혹등고래 무리를 뒤쫓습니다.<br>
+                                    세계에서 가장 큰 백상아리보다 3배 더 크고, 30배 더 무거운 혹등고래를 상어가 사냥할 수 있을까요?<br>
+                                    Shark vs. Whale | 상어 vs 고래 </span>
+                                <a class="button">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="conbox conbox2"><img src="./images/channel2.png">
+                            <div class="conbox-txt">
+                                <strong>나무 위에서 사냥하는 동물, 표범</strong>
+                                <span>주로 나무 위에서 생활하는 표범은 나무와 나뭇잎 사이에 자신의 몸을 숨기는 닌자 기술을 터득했습니다.<br>
+                                    또한 부드러운 부드러운 발로 기척을 숨기죠. 표범은 동물 중의 완벽한 닌자라고 할 수 있습니다.<br>
+                                    Jumgping like Ninja | 닌자 표범 </span>
+                                <a class="button">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="conbox conbox3"><img src="./images/channel3.png">
+                            <div class="conbox-txt">
+                                <strong>우주비행사들이 말하는 놀라운 '오로라' 목격담</strong>
+                                <span>백보통 지구 자기장은 눈으로 확인하기 어렵습니다. 하지만 우주에 있다면 상황은 달라지죠. 우주 위에서 지구를 바라보면, <br>
+                                    태양으로부터 우리를 보호하는 활동을 확인할 수 있습니다. 오로라의 움직임이 태양의 방사선을 막는 현상이라는 사실이 우리에게 감동을 줍니다.<br>
+                                    One Strange Rock | 지구, 경이로운 행성 </span>
+                                <a class="button">자세히 보기</a>
+                            </div>
+                        </div>
+                        <div class="conbox conbox4"><img src="./images/channel4.jpg">
+                            <div class="conbox-txt">
+                                <strong>못생긴 유충의 놀라운 변화</strong>
+                                <span>특이한 입을 가진 이 수중 생물은 여러 번의 허물을 벗으며 성장합니다.
+                                    총 15번의 허물을 벗는 과정을 거치죠.<br> 어느 시기가 되면 이 유충은 수중에서 생활할 수 없게 되는데,
+                                    물 밖으로 나가 마지막 허물을 벗게 되면 잠자리로 거듭나게 됩니다.<br>Animal Fight Club V | 와일드 파이트 클럽 V</span>
+                                <a class="button">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont2-nav">
+                        <ul>
+                            <li><img src="./images/channel1.jpg"></li><li><img src="./images/channel2.png"></li><li><img src="./images/channel3.png"></li><li><img src="./images/channel4.jpg"></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <div class="slide" id="slide1">
+                    <div class="avi avi1">
+                        <img src="./images/avi1.jpg">
+                    </div>
+                    <div class="m-title">
+                    <strong>VIDEO</strong></div>
+                    <div class="black"></div>
+                    <img src="./images/play-btn.png" class="play-btn">
+                    <div class="avi-txt avi-txt1">
+                        <strong>Savage Kingdom | 킹덤</strong>
+                        <span>표범 사바와 사바의 새끼들은 요새이자 안식처인 바위에서 살아갑니다.<br>
+                            표범바위 아래에는 온갖 위험이 도사리는데<br>
+                            오랜 숙적인 아프리카들개(리카온) 무리가 이들을 노립니다.<br>
+                            <br><br>
+                            Savage Kingdom | 킹덤<br><br>
+
+                            9월24일 (금) 오후6시, 이어지는 이야기가 업로드될 예정이니 많은 시청 부탁 드립니다.</span>
+                        <a class="button">자세히 보기</a>
+                        <a class="button play">더보기</a>
+                    </div>
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="avi avi2"><img src="./images/avi2.jpg">
+                    </div>
+                    <div class="black"></div>
+                    <img src="./images/play-btn.png" class="play-btn">
+                    <div class="avi-txt">
+                        <strong>Flooded Tombs of The Nile | 잠겨있는 피라미드</strong>
+                        <span>고대 왕국 쿠시는 4,000년도 더 전에 시작되어 누비아 사막의 넓은 지역을 지배했습니다.
+                            수단 북부 지역의 쿠시 왕실 묘지에서 물에 잠긴 나스타센 왕의 무덤을 조사합니다.<br><br>
+
+                            Flooded Tombs of The Nile | 나일강에 잠겨있는 피라미드<br><br>
+
+                            6월8일 (금) 오후6시, 이어지는 이야기가 업로드될 예정이니 많은 시청 부탁 드립니다.</span>
+                        <a class="button">자세히 보기</a>
+                        <a class="button play">Play</a>
+                    </div>
+                </div>
+                <div class="slide" id="slide3">
+                    <div class="avi avi3"><img src="./images/avi3.jpg">
+                    </div>
+                    <div class="black"></div>
+                    <img src="./images/play-btn.png" class="play-btn">
+                    <div class="avi-txt">
+                        <strong>Animal Fight Club | 와일드 파이트 클럽</strong>
+                        <span>고수컷 아프리카 코끼리가 흰코뿔소를 노립니다.육상동물의 최강자, 코끼리와 코뿔소가 맞붙습니다. 이 둘의 싸움은 3일이 지나도 끝날 기미가 보이지 않습니다.<br><br>
+
+                            Animal Fight Club | 와일드 파이트 클럽<br><br>
+
+                            11월12일 (금) 오후6시, 이어지는 이야기가 업로드될 예정이니 많은 시청 부탁 드립니다.</span>
+                        <a class="button">자세히 보기</a>
+                        <a class="button play">Play</a>
+                    </div>
+                </div>
+                <div class="slide" id="slide4">
+                    <div class="avi avi4"><img src="./images/avi4.jpg">
+                    </div>
+                    <div class="black"></div>
+                    <img src="./images/play-btn.png" class="play-btn">
+                    <div class="avi-txt">
+                        <strong>Hostile Planet | 베어 그릴스의 혹독한 야생</strong>
+                        <span>심장만 승용차 크기, 혀 무게만 해도 코끼리와 비슷한 지구 역사상 가장 큰 동물, 대왕고래입니다.한때 남획으로 멸종 직전까지 갔었고 아직 위험이 가시진 않았지만 대왕고래 개체 수는 꾸준히 증가 중입니다.<br><br>
+
+                            Hostile Planet | 베어 그릴스의 혹독한 야생<br><br>
+
+                            6월8일 (화) 오후6시, 이어지는 이야기가 업로드될 예정이니 많은 시청 부탁 드립니다.</span>
+                        <a class="button">자세히 보기</a>
+                        <a class="button play">재생하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" id="section4">
+            <div class="intro">
+                <div class="slide" id="slide1">
+                    <div class="inner clearfix">
+                        <div class="m-title">
+                    <strong>NEWS</strong></div>
+                        <div class="title">
+                            <strong>News</strong>
+                        </div>
+                        <div class="news-list news-list1">
+                            <div class="news news1">
+                                <img src="./images/news1.jpg">
+                                <strong>맨몸으로 절벽을 오르는 등반가, 알렉스 호놀드의'프리솔로'</strong>
+                                <span>지난 25일 미국 로스엔젤레스에서 열린 제 19회 아카데미 시상식에서 ‘장편 다큐멘터리 상’을 받은 내셔널지오그래픽의 '프리 솔로'가 4월, 내셔널지오그래픽 채널로 찾아온다. 다큐멘터리 부문에서 아카데미 수상을 한 산악영화는 '프리솔로'가 처음이다.영화의 제목이자 알렉스 호놀드(33세)가 도전한 ‘프리솔로’란, 로프나 어떠한 보호 장구 없이 맨몸으로 산을 오르는 것을 뜻한다. 등반가 알렉스는 오로지 자신의 손끝과 신발의 마찰력에 의지한 채 1000m에 달하는 높이의 암벽을 오른다.</span>
+                            </div>
+                            <div class="news news2">
+                                <img src="./images/news2.jpg">
+                                <strong>인류의 새로운 시작, 그 두번째 이야기</strong>
+                                <span>지난 시즌에 이어 이번 시즌에도 테슬라모터스 및 스페이스엑스의 CEO인 일론 머스크를 비롯하여 영화 ‘마션’의 원작 소설가 앤디 위어 등 각계 세계 최고 수준의 전문가들이 대거 자문위원으로 참여하여 작품의 완성도를 한껏 끌어 올렸다. 한때는 공상 과학 소설의 일부로 여겨졌던 인류의 화성 정착은, 내셔널지오그래픽의 '마스(MARS)' 시리즈와 함께 한발짝 더 현실로 다가오게 되었다.
+                                </span>
+                            </div>
+                            <div class="news news3">
+                                <img src="./images/news3.jpg">
+                                <strong>일회용 플라스틱 사용 줄이기 캠페인!</strong>
+                                <span>첫 번째 놀라운 사실! 전세계적으로 이미 5조개가 넘는 플라스틱 조각들이 우리의 바다를 떠돌고 있습니다. 두 번째 놀라운 사실! 전세계적으로 해변에 버려지는 쓰레기의 73%가 병뚜껑, 플라스틱 병, 비닐봉지 등 플라스틱 제품입니다. 세 번째 놀라운 사실, 1950년대 230만톤 생산되던 플라스틱 제품은 그 생산량이 기하급수적으로 늘어나 1993년에는 1억6천2백만톤 2015년에는 무려 4억4천8백만톤이 생산 되었습니다.
+                                </span>
+                            </div>
+                        </div>
+                        <a class="button">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="inner clearfix">
+                                            <div class="title">
+                            <strong>News</strong>
+                        </div>
+                    <div class="news-list news-list2">
+                        <div class="news news4">
+                            <img src="./images/news4.jpg">
+                            <strong>안토니오 반데라스 주연, 천재 화가 파블로 피카소의 러브 앤 라이프!</strong>
+                            <span>10부작 드라마 시리즈 '지니어스Ⅱ: 파블로 피카소'를 첫 방송한다. '지니어스Ⅱ: 파블로 피카소'는 지난 해 에미상, 골든 글로브, 미국 배우 조합상 노미네이트에 빛나는 성과를 이루어낸 내셔널지오그래픽 '지니어스' 시리즈의 첫 이야기 '또 다른 아인슈타인: 지니어스'를 잇는 시리즈의 두 번째 이야기로 20세기 최고 거장, 파블로 피카소의 사랑과 삶을 다룬다.</span>
+                        </div>
+                        <div class="news news5">
+                            <img src="./images/news5.jpg">
+                            <strong>세계적인 배우 윌 스미스, 그의 목소리로 듣는 푸른 행성 지구의 모든 것!</strong>
+                            <span>한국 내셔널지오그래픽(이하 NGC)은 오는 7일(토) 밤 11시, 세계적인 배우 윌 스미스가 나레이션으로 참여하고 영화 ‘블랙 스완’의 감독 대런 아로노프스키가 제작하여 전세계의 관심을 모으고 있는 10부작 과학 다큐멘터리 시리즈 '우주인, 지구를 말하다 '원 스트레인지 락'(One Strange Rock, 이하 원 스트레인지 락) 을 첫 방송한다.
+                            </span>
+                        </div>
+                        <div class="news news6">
+                            <img src="./images/news6.jpg">
+                            <strong>인간의 본성을 파헤치기 위한 모건 프리먼의 여정</strong>
+                            <span>지난 2016년 에미 상 후보로 지명되었던 내셔널지오그래픽의 '스토리 오브 갓'시리즈. 신에 대한 의문을 탐구하기 위해 전세계를 다녔던 모건 프리먼이 이번에는 신이 아닌 인간에 집중하기 위해 다시 한 번 내셔널지오그래픽과 손을 잡았다. 70억 인구의 단 하나의 공통점, 인간의 본성에 대해 이야기하는 '모건 프리먼의 스토리 오브 맨(원제: Story of Us)'은 오는 13일 밤 11시에 첫 방송된다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="inner clearfix">
+                    <div class="title">
+                        <strong>더보기+</strong>
+                    </div>
+                    <div class="news-list news-list3">
+                        <div class="news news7">
+                            <img src="./images/news7.jpg">
+                            <strong>바다의 포식자, 상어의 모든 것!</strong>
+                            <span>연일 이어지는 폭염주의보! 무더운 날씨를 피하려는 피서객들이 전국 각지의 해수욕장에 몰리는가운데, 한반도 해상 전역이 수온 상승으로 상어가 산란과 먹이를 구하기 좋은 환경이 되면서 출몰하는 식인상어로부터의 위협도 높아져 가고 있다.
+
+                            실제로 지난 7월 6일 여수 돌산도 임포항 해역에서는 고래상어가, 지난해엔 영화 ‘죠스’에 등장하는 백상아리가 영덕 앞바다에서 발견되기도 했다.
+                            </span>
+                        </div>
+                        <div class="news news8">
+                            <img src="./images/news8.jpg">
+                            <strong>내셔널지오그래픽 탐험가 제임스 카메론이 전하는 타이타닉의 비밀!</strong>
+                            <span>영화감독 제임스 카메론의 탐구와 열정이 담긴 영화 '타이타닉'이 개봉 20주년을 맞이해 지난 1일 재개봉하면서 다시 한 번 국내 팬들의 열렬한 관심과 사랑을 받고 있다. 내셔널지오그래픽에서는 2월 5일(월)부터 4일간 밤 11시에, 그의 열정의 연장선을 기록한 '타이타닉, 그 후 20년'을 시작으로 타이타닉에 대한 숨겨진 진실과 제임스 카메론의 이야기를 방송한다.
+                            </span>
+                        </div>
+                        <div class="news news9">
+                            <img src="./images/news9.jpg">
+                            <strong>"코리안 신루트 개척, 포기란 없다!"</strong>
+                            <span>내셔널지오그래픽 탐험가(National Geographic Asia Grantee of 2016) 홍성택 대장이 오늘(4일), 세계 최초 로체 남벽 정복에 도전하는 원정길에 오른다.홍성택 대장은 네팔 카트만두에 도착하는 대로 캠프 설치 및 고소 적응 훈련 등 현지 사전 준비를 거친 뒤 본격적인 로체 남벽 등반에 들어가 10월 25일을 목표로 정상을 밟을 계획이다.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section5">
+            <div class="intro">
+                <div class="slide" id="slide1">
+                    <div class="inner clearfix">
+                                                <div class="m-title">
+                    <strong>MAGAZINE</strong></div>
+                        <div class="title">
+                            <strong>Magazine</strong>
+                        </div>
+                        <div class="img-area">
+                            <div class="img img-1"></div>
+                            <div class="img-area2">
+                                <div class="img img-2"></div>
+                                <div class="img img-3"></div>
+                                <div class="img img-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="inner clearfix">
+
+                    <div class="title">
+                        <strong>Magazine</strong>
+                    </div>
+                    <div class="img-area">
+                        <div class="img img-5"></div>
+                        <div class="img img-6"></div>
+                        <div class="img img-7"></div>
+                        <div class="img img-13"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div class="inner clearfix">
+                    <div class="m-title">
+                    <strong>MAGAZINE</strong></div>
+                    <div class="title">
+                        <strong>Magazine</strong>
+                    </div>
+                    <div class="img-area">
+                        <div class="img img-8"></div>
+                        <div class="img img-9"></div>
+                        <div class="img img-10"></div>
+                        <div class="img img-11">
+                            <strong>내셔널지오그래픽 공식홈페이지에서 더 많은 소식을 만나보세요.</strong>
+                            <a class="button">보러가기</a>
+                        </div>
+                        <div class="img img-12"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section" id="section6">
+            <div class="intro">
+                <div class="slide" id="slide1">
+                    <!--
+                    <div class="aim aim1">
+                        <div class="outcircle">
+                            <div class="incircle"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="aim aim2">
+                        <div class="outcircle">
+                            <div class="incircle"></div>
+                        </div>
+
+
+                    </div>
+-->                    <div class="m-title">
+                    <strong>STORE</strong></div>
+                    <div class="img-box"></div>
+                    <div class="shop-img shop-img1"></div>
+                    <div class="shop-area shop-area1">
+                        <strong>21FW Kids<br>플리스 풀 집업</strong>
+                        <span>올 가을 더욱 포근하고 트렌디 하게.</span>
+                        <a class="button">더보기</a>
+                    </div>
+
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="img-box"></div>
+                    <div class="shop-img shop-img2"></div>
+                    <div class="shop-area shop-area2">
+                        <strong>21FW <br>LOOK BOOK</strong>
+                        <span>내셔널지오그래픽의 21FW 컬렉션.</span>
+                        <a class="button">구매하기</a>
+                    </div>
+                </div>
+                <div class="slide" id="slide3">
+                    <div class="img-box"></div>
+                    <div class="shop-img shop-img3"></div>
+                    <div class="shop-area shop-area3">
+                        <strong>21FW Kids<br>ESSENTIAL LINE</strong>
+                        <span>일상 속 소중한 순간.</span>
+                        <a class="button">구매하기</a>
+                    </div>
+                </div>
+                <div class="slide" id="slide4">
+                    <div class="img-box"></div>
+                    <div class="shop-img shop-img4"></div>
+                    <div class="shop-area shop-area4">
+                        <strong>GORE-TEXs<br>VANGUARD</strong>
+                        <span>모험을 향한 위대한 발걸음.</span>
+                        <a class="button">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

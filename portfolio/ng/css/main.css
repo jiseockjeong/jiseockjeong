@@ -1,0 +1,1588 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: -1px;
+    border: 0px;
+}
+
+.m-title{
+    display: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+span {
+    line-height: 1.5;
+}
+
+strong {
+    line-height: 1.2;
+}
+
+.button {
+    color: #222;
+    padding: 10px 40px;
+    background: #FBD42C;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.button:hover {
+    color: white;
+    padding: 10px 40px;
+    background: #222;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    background: rgba(34, 34, 34, 0.7);
+    z-index: 99999;
+}
+
+
+#header h1.logo {
+    height: 50px;
+}
+
+#header .logo-area {
+    display: inline-block;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+#header h1.logo img {
+    width: 150px;
+}
+
+#header nav {
+    margin-top: 25px;
+
+}
+
+#header nav ul {}
+
+#header nav ul li {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    width: 10%;
+    text-align: center;
+}
+
+#header nav ul li a {
+    color: #fff;
+    padding: 5px;
+    font-weight: 100;
+    transition: all 0.3s;
+}
+
+#header nav ul li:hover a {
+    color: #FBD42C;
+    padding: 5px;
+    font-weight: 100;
+}
+
+.side-bar {
+    width: 20%;
+    background-color: #0a0a0a;
+    position: fixed;
+    right: -500px;
+    top: 0px;
+    bottom: 0;
+    transition: all 0.1s ease;
+}
+
+.side-bar .logo2{
+    width:100%;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.side-bar .logo2 img{
+    width:40%;
+}
+
+.side-bar ul li {
+    width: 100%;
+    height: 80px;
+}
+
+.side-bar ul {
+    margin-left: 20%;
+    margin-top: 30%;
+}
+
+.side-bar ul li a {
+    font-size: 30px;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.side-bar ul li a:hover {
+    color: #FBD42C;
+}
+
+.copyright {
+    margin-left: 20%;
+}
+
+.copyright span {
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.sns-area {
+    height: 30px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sns-area ul {
+    margin-left: 20%;
+    margin-top: 0%;
+}
+
+.sns-area ul li {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.sns-area ul li:hover {
+
+    background-color: #FBD42C;
+}
+
+.sns-area ul li:last-child {
+    margin-right: 0px;
+}
+
+.sns-area ul li a img {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.sidebar-txt {
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+.sidebar-txt li a {
+    color: white;
+    font-weight: 100;
+    font-size: px;
+}
+
+/*
+.close{
+    width:100px;
+    height:100px;
+    background-color: red;
+    position: absolute;
+    top:0px;
+    right:0px;
+    cursor: pointer;
+}
+*/
+
+.open {
+    width: 100px;
+    height: 100px;
+    background-size: 30%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 999999999;
+}
+
+.open span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.active span {
+    background: rgba(255, 255, 255, 0);
+}
+
+.open span:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    color: transparent;
+    position: absolute;
+    top: -8px;
+    transition: all 0.3s ease;
+}
+
+.active span:after {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.open span:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: white;
+    color: transparent;
+    position: absolute;
+    top: 8px;
+    transition: all 0.3s ease;
+}
+
+.active span:before {
+    top: 0px;
+    transform: rotate(-45deg);
+}
+
+
+
+/*slick slide 애니메이션 추가 예시 */
+#main_slide {
+    width: 100%;
+    overflow: hidden;
+}
+
+#main_slide .box1 {
+    width: 100%;
+    min-width: 1200px;
+    background-color: #dc9cbc;
+}
+
+#main_slide .box2 {
+    width: 100%;
+    min-width: 1200px;
+    background-color: beige;
+}
+
+#main_slide .box3 {
+    width: 100%;
+    min-width: 1200px;
+    background-color: cornflowerblue;
+}
+
+#main_slide .box {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#section0 {
+    overflow: hidden
+}
+
+.cont_box {
+    height: 100%;
+}
+
+
+.back1 {
+    float: right;
+    width: 70%;
+    height: 100%;
+    background: url(../images/back1.jpg) no-repeat 60%;
+}
+
+.sec1-1 {
+    position: absolute;
+    width: 40%;
+    height: 500px;
+    top: 35%;
+    left: 20%;
+}
+
+.sec1-1 img {
+    width: 100%;
+    display: block;
+}
+
+.sec1-1 span {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding-top: 5%;
+    line-height: 1.3;
+    font-weight: 100;
+}
+
+.sec1-2 {
+    position: absolute;
+    width: 15%;
+    height: 200px;
+    top: 50%;
+    right: 5%;
+    display: none;
+}
+
+.sec1-2 strong {
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sec1-2 span {
+    display: block;
+    color: white;
+    font-size: 15px;
+    padding-top: 5%;
+    font-weight: 100;
+    padding-bottom: 50px;
+    line-height: 1.3;
+}
+
+.sec1-3 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.sec1-3 ul li {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.sec1-3 ul li img {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*
+#section0 .cont_box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#section0 .cont_box ul {
+    width: 1050px;
+}
+
+#section0 .cont_box ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#section0 .cont_box ul li {
+    float: left;
+    width: 250px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 0 50px;
+
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 0.4s;
+
+}
+
+#section0.on .cont_box ul li {
+    transform: translateY(0);
+    opacity: 1;
+}
+*/
+
+.cont {
+    height: 100%;
+}
+
+
+
+
+
+
+#section1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+#section1 .inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#section1 ul {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#section1 ul:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+#section1 ul li {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    float: left;
+    margin: 0px;
+    overflow: hidden;
+    transform: translateY(150px);
+    /*최초 위치값을 아래로 내림 */
+    transition: all 1s;
+    /*1초동안 움직이도록 */
+    opacity: 0;
+    /*처음엔 보이지 않게 */
+}
+
+#section0 ul li {
+    overflow: hidden;
+    transform: translateX(-150px);
+    /*최초 위치값을 아래로 내림 */
+/*
+    transition-property: "opacity","transform";
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    
+*/
+    /*1초동안 움직이도록 */
+    opacity: 0;
+    /*처음엔 보이지 않게 */
+    transition: all 0.5s ease-out;
+}
+
+#section0.on ul li {
+    transform: translateX(0);
+    /*완성 위치로 오도록 */
+    opacity: 1;
+    /* 다시 나타나도록 */
+}
+
+#section0.on ul li:nth-child(1) {
+    transition-delay: 0.3s;
+}
+
+#section0.on ul li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+
+#section0.on ul li:nth-child(3) {
+    transition-delay: 0.7s;
+}
+
+#section1 ul li:hover {
+    transition: all 1s ease-out;
+}
+
+
+#section1 ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#section1.on ul li {
+    transform: translateY(0);
+    /*완성 위치로 오도록 */
+    opacity: 1;
+    /* 다시 나타나도록 */
+}
+
+#section1.on ul li:nth-child(1) {
+    transition-delay: 0s;
+    /*박스 4개가 순서대로 나타나도록 지연시간 설정 */
+}
+
+#section1.on ul li:nth-child(2) {
+    transition-delay: 0.3s;
+    /*박스 4개가 순서대로 나타나도록 지연시간 설정 */
+}
+
+#section1.on ul li:nth-child(3) {
+    transition-delay: 0.6s;
+    /*박스 4개가 순서대로 나타나도록 지연시간 설정 */
+}
+
+#section1.on ul li:nth-child(4) {
+    transition-delay: 0.9s;
+    /*박스 4개가 순서대로 나타나도록 지연시간 설정 */
+}
+
+.sec2-1 {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    /*1초동안 움직이도록 */
+}
+
+
+.sec2-1 .sec2-list {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.sec2-1 .sec2-list strong {
+    width: 70%;
+    display: block;
+    margin-left: 15%;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    font-weight: 600;
+}
+
+.sec2-1 .sec2-list strong:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 5px;
+    height: 25px;
+    background-color: #FBD42C;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+
+.sec2-1 .sec2-list span {
+    width: 70%;
+    display: block;
+    margin-left: 15%;
+    font-size: 13px;
+    color: white;
+    padding-top: 10px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.sec2-txt {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.animal:hover {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.model:hover {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.place:hover {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.camera:hover {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.animal2 {
+    transition: all 0.5s;
+}
+
+.model2 {
+    transition: all 0.5s;
+}
+
+.place2 {
+    transition: all 0.5s;
+}
+
+.camera2 {
+    transition: all 0.5s;
+}
+
+.black {
+    width: 30%;
+    height: 100%;
+    background-color: #111;
+    position: absolute;
+    right: 0px;
+}
+
+
+/*cont2 시작 */
+
+.cont2 {
+    background-color: #222;
+}
+
+#section2 {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#section2 .box {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 0 50px;
+    border: 1px solid #ccc;
+    background-color: coral;
+
+    transform: translateY(300px);
+    transition: all 1s;
+    opacity: 0;
+
+}
+
+#section2 .conbox-txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    margin-top: 50px;
+
+}
+
+#section2.on .conbox-txt {
+    opacity: 1;
+    margin-top: 0px;
+}
+
+#section2 .conbox-txt strong {
+    color: white;
+    font-size: 40px;
+    display: block;
+    font-weight: 100;
+}
+
+#section2 .conbox-txt span {
+    padding-top: 20px;
+    font-size: 16px;
+    color: white;
+    display: block;
+    padding-bottom: 50px;
+    font-weight: 100;
+}
+
+#section2 .conbox-txt a {}
+
+#section2.on .box {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+#section2 .box1 {
+    transition-delay: 0s;
+}
+
+#section2 .box2 {
+    transition-delay: 0.3s;
+}
+
+#section2 .box3 {
+    transition-delay: 0.6s;
+}
+
+/*cont3 시작 */
+#section3 .slide {
+    width: 100%;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    background-color: #000;
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 52;
+    top: 75%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+input[type="radio"]:checked + label {
+    background-color: red;
+    color: #fff
+}
+
+.conbox {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+
+}
+
+.conbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+input[id="tab01"]:checked ~ .conbox1 {
+    display: block;
+}
+
+input[id="tab02"]:checked ~ .conbox2 {
+    display: block;
+}
+
+input[id="tab03"]:checked ~ .conbox3 {
+    display: block;
+}
+
+input[id="tab04"]:checked ~ .conbox4 {
+    display: block;
+}
+
+.label img {}
+
+.pick {
+    width: 140px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 3px solid #FBD42C;
+    position: absolute;
+    z-index: 53;
+    top: 75%;
+    lefT: 50%;
+    transform: translateX(-200%);
+    transition: all 0.5s ease-out;
+
+}
+
+
+.cont2-nav {
+    position: absolute;
+    width: 100%;
+    z-index: 51;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cont2-nav ul li {
+    display: inline-block;
+}
+
+.cont2-nav ul li img {
+    width: 140px;
+    height: 80px;
+
+}
+
+#section2 .intro {
+    width: 100%;
+    height: 100%;
+}
+
+#section2 .cont2 {
+    width: 100%;
+    height: 100%;
+}
+
+.tab_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*
+#section3 #slide1 .box {
+    display: inline-block;
+    width: 1200px;
+    height: 300px;
+    background-color: cornflowerblue;
+
+    transform: translateX(200%);
+    transition: all 0.5s;
+    opacity: 0;
+}
+*/
+
+/*
+#section3 #slide1.on .box {
+    transform: translateX(0);
+    opacity: 1;
+}
+*/
+
+#section3 .slide {
+    position: relative;
+}
+
+#section3 .avi {
+    width: 70%;
+    height: 100%;
+    float: left
+}
+
+#section3 .avi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4
+}
+
+#section3 .avi-txt {
+    position: absolute;
+    bottom: 20%;
+    right: 150px;
+    width: 500px;
+}
+
+#section3 .avi-txt1{
+    position: absolute;
+    bottom: 20%;
+    right: -500px;
+    width: 500px;
+    transition: all 0.3s;
+}
+
+#section3 .on .avi-txt1{
+    position: absolute;
+    right: 150px;
+    width: 500px;
+}
+
+#section3 .avi-txt strong {
+    color: white;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+
+}
+
+#section3 .avi-txt span:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 150px;
+    height: 3px;
+    background-color: #FBD42C;
+    position: absolute;
+    top: 15px;
+    border-radius: 3px;
+    transform: rotate(0deg);
+}
+
+#section3 .avi-txt span {
+    padding-top: 25px;
+    font-size: 16px;
+    color: white;
+    display: block;
+    padding-bottom: 50px;
+    font-weight: 100;
+    position: relative;
+
+}
+
+#section3 .avi-txt .button {}
+
+.play {
+    opacity: 0;
+}
+
+.play-btn {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+/*-----------------------------news------------------------------------------------- */
+
+#section4 .intro {
+    transition: all 0.3s ease-in;
+}
+
+#section4 .inner {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#section4 #slide1 {
+    background: url(../images/news1.jpg) no-repeat center/cover;
+    transition: all 0.3s ease-in;
+}
+
+
+#section4 #slide2 {
+    background: url(../images/news4.jpg) no-repeat center/cover;
+    transition: all 0.3s ease-in;
+}
+
+#section4 #slide3 {
+    background: url(../images/news7.jpg) no-repeat center/cover;
+    transition: all 0.3s ease-in;
+}
+
+.fp-tableCell {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.news-list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 22%
+}
+
+.news-list img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#section4 .news {
+    width: 29.8%;
+    margin: 0 auto;
+    height: 100%;
+    /*    background-color: white;*/
+    display: inline-block;
+    margin-top: 100px;
+    /*    transform: translateY(150px);*/
+    /*최초 위치값을 아래로 내림 */
+    transition: all 0.5s;
+    /*1초동안 움직이도록 */
+    opacity: 0;
+    /*처음엔 보이지 않게 */
+    cursor: pointer;
+
+}
+
+    #section4 #slide2 .title{
+        opacity: 0;
+    }
+
+#section4 .title {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    transform: translateX(-160px);
+    height: 60px;
+}
+
+#section4.on .title {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#section4.on .news {
+    opacity: 1;
+    margin-top: 20px;
+    /* 다시 나타나도록 */
+}
+
+
+.news1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+
+.news2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+}
+
+
+.news3 {
+    position: absolute;
+    right: 0px;
+}
+
+.news4 {
+    position: absolute;
+    left: 0px;
+
+}
+
+.news5 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.news6 {
+    position: absolute;
+    right: 0px;
+}
+
+
+.news7 {
+    position: absolute;
+    left: 0px;
+
+}
+
+.news8 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.news9 {
+    position: absolute;
+    right: 0px;
+
+}
+
+.news strong {
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.news span {
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+    display: block;
+    margin-top: 10px;
+    height: 180px;
+}
+
+#section4 .title {
+    color: white;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    top: 22%
+}
+
+#section4 .title strong:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 5px;
+    height: 25px;
+    background-color: #FBD42C;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+}
+
+#section4 #slide1 .button{
+    display: none;
+}
+
+#section4 #slide3 .title {
+    display: block;
+}
+
+#section4 #slide3 .title strong {
+    float: right;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    margin-top: 40px;
+}
+
+#slide3 .title strong:hover {
+    color: #FBD42C;
+}
+
+#slide3 .title strong:after {
+    display: none;
+}
+
+
+#footer {
+    width: 100$;
+    height: 200px;
+    background-color: azure
+}
+
+/*---------------------------section4-------------------------------*/
+
+#section5 .inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#section5 .intro {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#section5 .title {
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    transform: translateX(-160px);
+    height: 60px;
+}
+
+#section5.on .title {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#section5 .title {
+    color: white;
+    font-size: 40px;
+    display: block;
+    font-weight: 600;
+    position: relative;
+    top: 150px;
+}
+#section5 #slide2 .title strong{
+    display: none;
+} 
+
+#section5 #slide3 .title strong{
+    display: none;
+} 
+
+#section5 .title strong:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 5px;
+    height: 25px;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    background-color: #FBD42C;
+}
+
+#section5 .img-area{
+    width:100%;
+    height:65%;
+    margin-top:150px;
+    position: relative;
+}
+
+#section5 .img{
+    cursor: pointer;
+}
+
+#section5 .img-1{
+    width:50%;
+    height:100%;
+    background:url(../images/magazine4.png) no-repeat bottom/cover;
+    display: inline-block;
+    overflow: hidden;
+    opacity: 0.5;
+    
+}
+
+#section5 .img-1:hover{
+
+    opacity: 1;
+}
+
+
+#section5 .img-area2{
+    width:50%;
+    height:100%;
+    display: inline-block;
+    float:right;
+}
+
+#section5 .img-2{
+    width:100%;
+    height:50%;
+    background:url(../images/magazine6.jpg) no-repeat center/cover;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+#section5 .img-2:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-3{
+    width:50%;
+    height:50%;
+    background:url(../images/magazine1.jpg) no-repeat top/cover;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+#section5 .img-3:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-4{
+    width:50%;
+    height:50%;
+    background:url(../images/magazine7.jpg) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-4:hover{
+
+    opacity: 1;
+}
+
+
+#section5 .img{
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+#section5.on .img{
+    transform: scale(1.0);
+}
+
+#section5 .img-5{
+    width:25%;
+    height:100%;
+    background:url(../images/magazine.jpg) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-5:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-6{
+    width:25%;
+    height:100%;
+    background:url(../images/magazine3.jpg) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-6:hover{
+
+    opacity: 1;
+}
+
+
+#section5 .img-7{
+    width:50%;
+    height:50%;
+    background:url(../images/magazine8.png) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-7:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-13{
+    width:50%;
+    height:50%;
+    background:url(../images/magazine12.png) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-13:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-8{
+    width:25%;
+    height:100%;
+    background:url(../images/model2.png) no-repeat left/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-8:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-9{
+    width:25%;
+    height:100%;
+    background:url(../images/magazine10.png) no-repeat top/cover;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+#section5 .img-9:hover{
+
+    opacity: 1;
+}
+
+#section5 .img-10{
+    width:50%;
+    height:50%;
+    background:url(../images/magazine9.png) no-repeat top/cover;
+    display: inline-block;
+    float: right;
+    opacity: 0.5;
+}
+
+#section5 .img-10:hover{
+    opacity: 1;
+}
+
+#section5 .img-11{
+    width:25%;
+    height:50%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+#section5 .img-11 strong{
+    color:white;
+    font-size:20px;
+    display: block;
+    padding-top:25%;
+    padding-bottom: 30px;
+    margin-left:50px;
+}
+
+
+#section5 .img-12{
+    width:25%;
+    height:50%;
+    background:url(../images/magazine11.png) no-repeat top/cover;
+    display: inline-block;
+    float: right;
+    opacity: 0.5;
+}
+
+#section5 .img-12:hover{
+    opacity: 1;
+}
+
+/*--------------------------------section5------------------------------------*/
+#section6 .slide {
+    position: relative;
+}
+
+
+#section6 .img-box {
+    width: 20%;
+    height: 100%;
+    background: #FBD42C;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 50;
+
+}
+
+#section6 .shop-img1 {
+    width: 80%;
+    height: 100%;
+    background: url(../images/shop1.png) no-repeat right/cover;
+}
+
+#section6 .shop-img2 {
+    width: 80%;
+    height: 100%;
+    background: url(../images/shop2.png) no-repeat right/cover;
+}
+
+#section6 .shop-img3 {
+    width: 80%;
+    height: 100%;
+    background: url(../images/shop3.png) no-repeat right/cover;
+}
+
+#section6 .shop-img4 {
+    width: 80%;
+    height: 100%;
+    background: url(../images/shop4.jpg) no-repeat right/cover;
+}
+
+
+#section6 .shop-area {
+    width: 30%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    z-index: 51;
+
+}
+
+#section6 .shop-area strong {
+    display: block;
+    font-size: 35px;
+    margin-left: 10%;
+    margin-top: 35px;
+
+}
+
+#section6 .shop-area strong:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 5px;
+    height: 30px;
+    background-color: #FBD42C;
+    position: absolute;
+    top: 45px;
+    left:7%;
+}
+
+#section6 .shop-area span {
+    display: block;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+
+}
+
+#section6 .button2{
+    display: none;
+}
+
+#section6 .shop-area a {
+    margin-left: 10%;
+}
+
+#slide1 .aim1 {
+    position: absolute;
+    top: 40%;
+    lefT: 60%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 500;
+}
+
+#slide1 .aim2 {
+    position: absolute;
+    top: 80%;
+    lefT: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 500;
+}
+
+.outcircle {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.incircle {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

@@ -1,0 +1,129 @@
+@media screen and (min-width:1px) and (max-width:819px) {
+
+    .m {
+        display: block;
+    }
+    
+    .srh{
+        display: none;
+    }
+
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+
+
+    header .util-area {
+        display: none;
+    }
+    
+    .main-nav ul li{
+        width: 25%;
+    }
+
+
+    .banner-area > ul li img {
+        width: 100%;
+    }
+
+    .title-area span {
+        display: none;
+    }
+
+    .best .best-area ul li {
+        width: 50%;
+        height: 380px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .best .best-area ul li:nth-child(7) {
+        display: block;
+    }
+
+    .best .best-area ul li:nth-child(8) {
+        display: block;
+    }
+
+    .best .best-area ul li .img-area {
+        width: 100%;
+        height: 250px;
+
+    }
+
+    .premium .premium-area ul li {
+        width: 50%;
+        height: 380px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+
+    .premium .premium-area ul li .img-area {
+        width: 100%;
+        height: 250px;
+
+    }
+    
+    .list-frame{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .magazine{
+        display: none;
+    }
+    .title-area{
+        padding-top: 40px;
+    }
+    
+    .family-site{
+        display: none;
+    }
+    
+    .right-info{
+        display: none;
+    }
+    
+    .cocktail .cocktail-list{
+        width: 100%;
+    }
+    
+    .cocktail .remote{
+        display: none;
+    }
+    .footer-nav ul{
+        width: 100%;
+    }
+    .premium{
+        padding-bottom: 120px;
+}
+    footer{
+        display: none;
+    }
+    
+
+}
+
+
+/*
+@media screen and (min-width:300px) and (max-width:550px) {
+
+    
+    footer{
+        display: none;
+    }
+    
+    h4{
+        font-size: 12px;
+    }
+    
+    h2{
+        font-size: 18px;
+    }
+}
+*/
+
+;

@@ -1,0 +1,1323 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: -1px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    width: 100%;
+    background: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.button {
+    cursor: pointer;
+}
+
+.left-button{
+    background: url(../images/button.png) no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.left-button:hover{
+    opacity: 1;
+}
+
+
+.right-button{
+    background: url(../images/button2.png) no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.right-button:hover{
+    opacity: 1;
+}
+
+.title-util{
+    text-align: right;
+    line-height: 50px;
+    color:#ccc;
+    transition: 0.5s;
+}
+
+.title-util:hover{
+    color:#4B7BE5;
+}
+
+/*-------------------------------header--------------------------------------*/
+
+header {
+    height: 83px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .logo {
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 26px;
+}
+
+header ul {
+    float: right;
+    height: 83px;
+}
+
+
+header ul li {
+    float: left;
+    height: 83px;
+    line-height: 83px;
+    margin-left: 30px;
+}
+
+header ul li a{
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+
+
+
+/*-------------------------------header--------------------------------------*/
+
+
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background: url(../images/main.png) no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.banner .textbox {
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+.banner .textbox span {
+    display: block;
+    font-size: 25px;
+}
+
+.banner .textbox strong {
+    font-size: 40px;
+}
+
+.banner .textbox p {
+    font-size: 25px;
+}
+
+.banner .textbox .button {
+    width: 290px;
+    height: 60px;
+    background: #5534A5;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.banner .textbox .button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.banner .textbox .button a {
+    line-height: 60px;
+}
+
+/*-------------------------------banner--------------------------------------*/
+
+.recommend {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    background: #FAFAFA;
+}
+
+.recommend nav {
+    position: absolute;
+    width: 1200px;
+    height: 200px;
+    top: -100px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.recommend nav ul {
+    position: relative;
+    height: 200px;
+}
+
+.recommend nav ul li {
+    float: left;
+    width: 240px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+    background: #fff;
+
+}
+
+.recommend nav ul li:hover a {
+    color: #333;
+}
+
+.recommend nav ul li:hover img {
+    width: 80px;
+}
+
+.recommend nav ul li:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 1px;
+    height: 150px;
+    background: #ccc;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.recommend nav ul li.on {
+    background: #4B7BE5;
+    color:white;
+}
+
+.recommend nav ul li.on a {
+    color: white;
+}
+
+.recommend nav ul li.on img {
+    width: 80px;
+}
+
+
+
+.recommend nav ul li:nth-child(1):after {
+    display: none;
+}
+
+.recommend nav ul li .textbox {
+    width: 200px;
+}
+
+.recommend nav ul li a {
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%, -50%);
+}
+
+.recommend nav ul li img {
+    width: 70px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+
+}
+
+.recommend .title-area {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.recommend .title-area ul {
+    position: absolute;
+    width: 160px;
+    top: 0px;
+    transition: 0.5s;
+
+}
+
+.recommend .title-area ul li {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B7BE5;
+    line-height: 50px;
+}
+
+.recommend .title-area h2 {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 160px;
+    color: #333;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.recommend .title-area .title-util {
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+.recommend .space {
+    width: 100%;
+    height: 150px;
+}
+
+.recommend .travel-area {
+    width: 100%;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommend .travel-area ul {
+    margin-top: 20px;
+    position: absolute;
+    width: 3600px;
+    height: 420px;
+    transition: 0.5s;
+}
+
+.recommend .travel-area .travel-list1{
+    display: block;
+}
+
+.recommend .travel-area .travel-list2{
+    display: none;
+}
+
+.recommend .travel-area .travel-list3{
+    display: none;
+}
+
+
+.recommend .travel-area ul li {
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.recommend .travel-area ul li:hover {
+    background: #4B7BE5;
+}
+
+.recommend .travel-area .left-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+}
+
+.recommend .travel-area .right-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+}
+
+.recommend .travel-area ul li .list-inner {
+    width: 310px;
+    height: 360px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    color: #333;
+
+}
+
+.recommend .travel-area ul li .list-img {
+    width: 310px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.recommend .travel-area ul li .list-inner img {
+    width: 310px;
+    height: 180px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.recommend .travel-area ul li:hover .list-inner img {
+    transform: scale(1.1);
+}
+
+.recommend .travel-area ul li:hover .list-inner {
+    color: #fff;
+}
+
+
+.recommend .travel-area ul li .list-inner strong {
+    margin-top: 15px;
+    font-size: 20px;
+    height: 60px;
+    display: block;
+
+}
+
+.recommend .travel-area ul li .list-inner span {
+    margin-top: 5px;
+    font-size: 15px;
+    display: block;
+
+}
+
+.recommend .travel-area ul li .list-inner p {
+    margin-top: 5px;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    color: #ccc;
+}
+
+.recommend .travel-area ul li .list-inner b {
+    margin-top: 10px;
+    font-size: 30px;
+    height: 60px;
+    display: block;
+}
+
+
+/*-------------------------------recommend--------------------------------------*/
+
+.event {
+    width: 100%;
+    height: 565px;
+    background: #fff;
+
+}
+
+.event .space{
+    width: 100%;
+    height: 100px;
+}
+
+.event .title-area {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.event .title-area ul {
+    position: absolute;
+    width: 160px;
+    top: 0px;
+    transition: 0.5s;
+
+}
+
+.event .title-area ul li {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B7BE5;
+    line-height: 50px;
+}
+
+.event .title-area h2 {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 160px;
+    color: #333;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.event .title-area .title-util {
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+.event .event-area{
+    width: 100%;
+    height: 400px;
+    margin-top: 85px;
+
+}
+
+.event .event-area .event-banner{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+/*    overflow: hidden;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.event .event-area .event-banner ul{
+    background: blue;
+    width: 6000px;
+    height: 300px;
+    position: relative;
+}
+
+.event .event-area .event-banner ul li{
+    width: 1200px;
+    height: 300px;
+    background: red;
+    float: left;
+}
+
+.event .event-area .event-list2{
+
+    width: 100%;
+    height: 100px;
+}
+
+.event .event-area .event-list2 ul{
+    width: 90px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.event .event-area .event-list2 ul li{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ccc;
+    float:left;
+    margin-right: 10px;
+    
+}
+
+.event .event-area .event-list2 ul li:first-child{
+    background: #4B7BE5;
+}
+
+.event .event-area .event-list2 ul li:last-child{
+    margin-right: 0px;
+}
+
+.event .left-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+}
+
+.event .right-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    border-radius: 50%;
+}
+
+/*-------------------------------event--------------------------------------*/
+
+.tourlist {
+    width: 100%;
+    height: 600px;
+    background: #000;
+}
+
+.tourlist .background {
+    background-repeat: no-repeat;
+    background-image: url(../images/hawaii.png);
+    background-size: cover;
+    transition: 0.5s;
+    height: 600px;
+    width: 100%;
+}
+
+
+.tourlist .background .inner {
+    position: relative;
+}
+
+.tourlist .background .spot-area {
+    width: 710px;
+    height: 400px;
+    padding-top: 100px;
+    float: left;
+    display: inline-block;
+}
+
+.tourlist .title-area {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.tourlist .title-area .spot-title {
+    float: left;
+    width: 800px;
+}
+
+.tourlist .title-area ul {
+    position: absolute;
+    width: 300px;
+    top: 0px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tourlist .title-area ul li {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B7BE5;
+    line-height: 50px;
+}
+
+.tourlist .title-area h2 {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 300px;
+    color: #fff;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.tourlist .spot-list {
+    width: 100%;
+    height: 320px;
+    padding-top: 35px;
+}
+
+.tourlist .spot-list li {
+    width: 230px;
+    height: 320px;
+    float: left;
+    margin-right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform: rotateY(90deg);
+    cursor: pointer;
+
+}
+
+@keyframes spin{
+    5%{
+        transform: rotateY(90deg);
+    }
+    15%{
+        transform: rotateY(0deg);
+    }
+    
+    85%{
+        transform: rotateY(0deg);
+    }
+    
+    95%{
+        transform: rotateY(90deg);
+    }
+}
+
+@keyframes spin2{
+    5%{
+        transform: rotateX(90deg);
+    }
+    15%{
+        transform: rotateX(0deg);
+    }
+    
+    85%{
+        transform: rotateX(0deg);
+    }
+    
+    95%{
+        transform: rotateX(90deg);
+    }
+}
+
+.tourlist .spot-list li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.tourlist .spot-list li:last-child {
+    margin-right: 0px;
+    animation-delay: 0.6s;
+}
+
+.tourlist .spot-img {
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.tourlist .spot-list li .spot-img img {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+    object-fit:cover; 
+}
+
+.tourlist .spot-list li:hover .spot-img img {
+    transform: scale(1.1);
+}
+
+.tourlist .spot-list li:hover {
+    background: #4B7BE5;
+
+}
+
+.tourlist .spot-list li:hover .text-box {
+    color: #fff;
+}
+
+.tourlist .spot-list li .text-box {
+    width: 200px;
+    height: 85px;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.tourlist .spot-list li .text-box strong {
+    height: 30px;
+    display: block;
+    font-size: 20px;
+}
+
+.tourlist .spot-list li .text-box .info {
+    width: 100px;
+    float: left;
+    height: 60px;
+
+}
+
+.tourlist .spot-list li .text-box .review {}
+
+.tourlist .spot-list li .text-box .info span {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.tourlist .spot-list li .text-box .info p {
+    font-size: 16px;
+}
+
+.tourlist .background .keyword-area {
+    width: 350px;
+    height: 400px;
+    padding-top: 100px;
+    float: right;
+    display: inline-block;
+}
+
+.tourlist .background .keyword-area .keyword-box {
+    width: 350px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tourlist .background .keyword-area .keyword-box strong {
+    font-size: 25px;
+    text-align: center;
+    display: block;
+
+    height: 40px;
+
+}
+
+.keyword-inner {
+    width: 290px;
+    height: 340px;
+    margin-left: 30px;
+    padding-top: 20px;
+
+}
+
+.keyword-inner .ranking {
+    float: left;
+    width: 30px;
+
+}
+
+.keyword-ranking {
+    height: 260px;
+}
+
+.keyword-inner .keyword {
+    float: left;
+    width: 190px;
+
+}
+
+.keyword-inner .change {
+    float: left;
+    width: 30px;
+    margin-left: 40px;
+
+}
+
+.keyword-inner .ranking ul li {
+    margin-top: 15px;
+    height: 33px;
+    line-height: 35px;
+    color: #ccc;
+    font-weight: 100;
+}
+
+.keyword-inner .keyword ul li {
+    margin-top: 15px;
+    height: 33px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    animation-name: spin2;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform: rotateX(90deg);
+}
+
+.keyword-inner .keyword ul li:nth-child(1){
+    font-weight: bold;
+    animation-delay: 0s;
+}
+
+.keyword-inner .keyword ul li:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.keyword-inner .keyword ul li:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.keyword-inner .keyword ul li:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+.keyword-inner .keyword ul li:nth-child(5){
+    animation-delay: 0.8s;
+}
+
+
+
+.keyword-inner .change ul li {
+    margin-top: 15px;
+    height: 33px;
+    line-height: 35px;
+    color: #ccc;
+    position: relative;
+    text-align: right;
+    animation-name: spin2;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform: rotateX(90deg);
+}
+
+.keyword-inner .change ul li:after {
+    content: '';
+    display: block;
+    clear: both;
+    border: 5px solid #fff;
+    border-bottom: 10px solid red;
+    box-sizing: border-box;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    animation-name: spin2;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform: rotateX(90deg);
+}
+
+.keyword-inner .change ul li:nth-child(3):after {
+    border: 5px solid #fff;
+
+}
+
+.keyword-inner .change ul li:nth-child(5):after {
+    border: 5px solid #fff;
+    border-top: 10px solid blue;
+    top: 15px;
+}
+
+.keyword-inner .button {
+    width: 100%;
+    height: 60px;
+    background: #5534A5;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.keyword-inner .button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+}
+
+.tourlist .time-nav {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.tourlist .time-nav .back-time {
+    width: 100%;
+    height: 12px;
+    background: gray;
+    position: relative;
+    top: -12px;
+    z-index: 1;
+}
+
+.tourlist .time-nav .running {
+    width: 0%;
+    height: 12px;
+    background: #4B7BE5;
+    position: relative;
+    top: 0px;
+    border-radius: 6px;
+    z-index: 2;
+    animation-name: running;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes running {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/*-------------------------------tourlist--------------------------------------*/
+
+.map {
+    width: 100%;
+    height: 930px;
+    background: #fafafa;
+}
+
+.map .space {
+    width: 100%;
+    height: 100px;
+}
+
+
+.map .title-area {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.map .title-area ul {
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    transition: 0.5s;
+
+}
+
+.map .title-area ul li {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4B7BE5;
+    line-height: 50px;
+}
+
+.map .title-area h2 {
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 100px;
+    color: #333;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+.map .title-area .title-util {
+    width: 100px;
+    height: 50px;
+    float: right;
+}
+
+.map .map-area {
+    width: 350px;
+    height: 550px;
+    padding-top: 85px;
+    float: left;
+    position: relative;
+}
+.map .back-map{
+    position: relative;
+    
+}
+
+.map .back-map img {
+    width: 350px;
+    height: 550px;
+    position: absolute;
+}
+
+.map .map-area .on-map img {
+    transition: 0.5s;
+    position: absolute;
+}
+
+.map .map-area .on-map ul li{
+    opacity: 0;
+}
+
+
+.map .map-area .trigger-map{
+    position: relative;
+    top:-85px;
+}
+
+.map .map-area .trigger-map img{
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.map .map-area .trigger-map li:nth-child(1) img{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.map .map-area .trigger-map img:hover{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.map .map-area ul li:nth-child(1) img{
+    top:125px;
+    left:38px;
+    z-index: 8;
+
+}
+
+.map .map-area ul li:nth-child(2) img{
+    top:85px;
+    left:115px;
+}
+
+.map .map-area ul li:nth-child(3) img{
+    top:235px;
+    left:30px;
+    z-index: 7;
+}
+
+.map .map-area ul li:nth-child(4) img{
+    top:247px;
+    left:169px;
+}
+
+.map .map-area ul li:nth-child(5) img{
+    top:357px;
+    left:13px;
+}
+
+.map .map-area ul li:nth-child(6) img{
+    top:584px;
+    left:0px;
+}
+
+
+.map .map-area .on-map img:hover{
+    opacity: 1;
+}
+
+.map .map-info {
+    width: 730px;
+    height: 550px;
+    top: 85px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.map .map-info ul {
+    width: 730px;
+    height: 550px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.map .map-info .hotel-list1{
+    display: block;
+}
+
+.map .map-info .hotel-list2 {
+    display: none;
+}
+
+.map .map-info .hotel-list3 {
+    display: none;
+}
+
+.map .map-info .hotel-list4 {
+    display: none;
+}
+
+.map .map-info .hotel-list5 {
+    display: none;
+}
+
+
+.map .map-info .hotel-list6 {
+    display: none;
+}
+
+.map .map-info ul li {
+    width: 350px;
+    height: 170px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.map .map-info ul li:hover {
+    background: #4B7BE5;
+}
+
+.map .map-info ul li:hover .text-box {
+    color: white;
+}
+
+.map .map-info ul li:hover .hotel-img img {
+    transform: scale(1.1);
+}
+
+.map .map-info ul li .hotel-img {
+    width: 100px;
+    height: 140px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.map .map-info ul li .hotel-img img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    transition: 0.5s;
+    /*    transform: scale(1.1);*/
+}
+
+.map .map-info ul li .text-box {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 200px;
+    height: 140px;
+    float: left;
+    display: inline-block;
+    color: #333;
+}
+
+.map .map-info ul li .text-box a {
+    color: #FFA800;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.map .map-info ul li .text-box strong {
+    display: block;
+    height: 48px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.map .map-info ul li .text-box span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.map .map-info ul li .text-box b {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+
+/*-------------------------------map--------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+}
+
+
+footer .notice{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+footer .notice span{
+    width: 80px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    font-weight: bold;
+    float: left;
+}
+
+footer .notice .notice-list{
+    float: left;
+    height: 30px;
+    width: 600px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+footer .notice .notice-list ul{
+    width: 600px;
+    height: 30px;
+    position: absolute;
+}
+
+footer .notice .notice-list ul li{
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+}
+
+footer .under-nav{
+    width: 100%;
+    height: 50px;
+
+}
+
+footer .under-nav ul{}
+
+footer .under-nav ul li{
+    height: 50px;
+    line-height: 50px;
+    float:left;
+    margin-right: 20px;
+    
+}
+
+footer .under-nav ul li a{
+    font-size: 15px;
+}
+
+footer .text-box span{
+    display: block;
+    font-size: 12px;
+    color:#ccc;
+    margin-bottom: 8px;
+}
