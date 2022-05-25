@@ -164,6 +164,39 @@ h2 {
 
 }
 
+.page{
+    margin-top: 50px;
+}
+
+.page button{
+    height: 50px;
+    width: 200px;
+    display: block;
+    border: 0px solid transparent;
+    background-color: #222;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.page button a{
+    text-decoration: none;
+}
+
+
+.page button img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left:25px;
+    top:15px;
+}
+
+.page button span{
+    color:white;
+}
+
 
 /*--------------------------menu--------------------------*/
 
@@ -181,7 +214,8 @@ h2 {
     margin-right: 40px;
 }
 
-.col-xl-4 {
+.col-xl-4,
+.col-xl-12 {
     margin-bottom: 30px;
     transition: 0.5s;
 
@@ -190,8 +224,11 @@ h2 {
 .col-xl-4:hover {
     transform: scale(1.1);
 }
+.col-xl-12 .frame{
+    width: 97%;
+}
 
-.col-xl-4 .frame {
+.frame {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
@@ -201,25 +238,25 @@ h2 {
 
 }
 
-.col-xl-4 .frame h5 {
+.frame h5 {
     margin-bottom: 0px;
     margin-top: 10px;
 }
 
-.col-xl-4 .frame span {
+.frame span {
     margin-top: 10px;
     margin-right: 5px;
 }
 
-.col-xl-4 .frame .btn {
+.frame .btn {
     display: block;
 }
 
-.col-xl-4 .frame p {
+.frame p {
     color: #ccc;
 }
 
-.col-xl-4 .frame img {
+.frame img {
     width: 100%;
     border: 1px solid #ccc;
     box-sizing: border-box;
