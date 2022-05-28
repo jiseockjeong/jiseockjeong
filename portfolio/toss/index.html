@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>금융의 모든 것, 토스에서 간편하게</title>
+  <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      let check = true;
+      $(".hamburger").click(function(){
+        if(check){
+          $(".hamburger svg:nth-child(1)").css("display","none");
+          $(".hamburger svg:nth-child(2)").css("display","block");
+          $(".slide-menu").stop().slideDown();
+          check = false;
+        }else{
+          $(".hamburger svg:nth-child(1)").css("display","block");
+          $(".hamburger svg:nth-child(2)").css("display","none");
+          $(".slide-menu").stop().slideUp();
+          check = true;
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="inner">
+        <div class="logo"><a href="#"><img src="./images/logo.png" alt="토스"></a></div>
+        <div class="nav-bar">
+          <nav>
+            <ul>
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">토스인증서</a></li>
+              <li><a href="#">채용</a></li>
+            </ul>
+          </nav>
+          <div class="language">
+            <ul>
+              <li><a href="#">KOR</a></li>
+              <li><a href="#">ENG</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class ="m slide-menu">
+        <ul>
+          <li><a href="#">회사 소개</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">토스인증서</a></li>
+          <li><a href="#">채용</a></li>
+          <li><a href="#">KOR</a><a href="#">ENG</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="main">
+      <div class="inner">
+        <div class="text-area" data-aos="zoom-in" data-aos-duration="2000">
+          <h1>금융의 모든 것<br>
+            토스에서 쉽고 간편하게</h1>
+          <div class="store">
+            <a href="#"><img src="./images/appstore.png">App Store</a>
+            <a href="#"><img src="./images/playstore.png">Play Store</a>
+          </div>
+        </div>
+        <div class="scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section1">
+      <div class="inner">
+        <div class="text-area" data-aos="fade-up" data-aos-duration="2000">
+          <p>내 모든 금융 내역을 한눈에 조회하고 한 곳에서 관리하세요.<br>
+            이제껏 경험 못 했던 쉽고 편리한 금융 서비스,<br>
+            토스와 함께라면 당신의 일상이 새로워질 거예요.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>홈 · 소비</h2>
+                <h3>내 돈 관리,<br>
+                  지출부터 일정까지<br>
+                  똑똑하게</h3>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="./images/app.png" alt="토스 앱 이미지">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6  pc" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="./images/app.png" alt="토스 앱 이미지">
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+              <div class="text-area">
+                <p>토스에 계좌와 카드를 연결해 보세요.<br>
+                  계좌 잔액, 대출·투자 내역은 기본,<br>
+                  일자별 소비와 수입까지 한 번에 볼 수 있어요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <div class="inner">
+        <div class="container">
+          <div class="row row1">
+            <div class="col-md-12" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>송금</h2>
+                <h3>간편하고 안전하게<br>
+                  수수료는 평생 무료로,<br>
+                  이런 송금 써보셨나요?</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="point">평생 무료 송금</span>
+                <span class="text">토스 평생 무료송금으로<br>
+                  모두의 금융에 자유를</span>
+                <span class="text2">누구에게 보내든 은행 상관 없이,<br>
+                  이제 토스와 함께 수수료 걱정 없이 송금하세요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <div class="img-area">
+                <img src="images/card.png" alt="송금 화면">
+              </div>
+            </div>
+          </div>
+          <div class="row row2  pc">
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <div class="img-area">
+                <img src="images/card2.png" alt="주의 화면">
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="point">사기계좌 조회</span>
+                <span class="text">송금 전 사기 내역 조회로<br>
+                  피해를 미리 방지할 수 있어요</span>
+                <span class="text2">송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
+                  상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
+                  안전하게 송금할 수 있어요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row1  mobile">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="point">사기계좌 조회</span>
+                <span class="text">송금 전 사기 내역 조회로<br>
+                  피해를 미리 방지할 수 있어요</span>
+                <span class="text2">송금 전 토스가 알아서 사기 내역 조회를 해드려요.<br>
+                  상대방의 연락처 또는 계좌가 사기 계좌인지 조회해<br>
+                  안전하게 송금할 수 있어요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <div class="img-area">
+                <img src="images/card2.png" alt="주의 화면">
+              </div>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="point">자동이체 예약</span>
+                <span class="text">은행 점검 시간,<br>
+                  기다릴 필요 없어요</span>
+                <span class="text2">은행 점검 시간에는 자동이체 예약을 이용해보세요.<br>
+                  점검 시간이 끝나면 토스가 알아서 송금해드릴게요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <div class="img-area">
+                <img src="images/card3.png" alt="점검 화면">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section4">
+      <div class="inner">
+        <div class="container">
+          <div class="row row1">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>대출</h2>
+                <h3>여러 은행의 조건을<br>
+                  1분 만에<br>
+                  확인해보세요.</h3>
+              </div>
+            </div>
+            <div class="col-md-6 red" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="./images/app.png" alt="토스 앱 이미지">
+              </div>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-md-6">
+              <div class="text-area">
+                <span class="text3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                  한도는 <span class="black">높게,</span>
+                </span>
+                <span class="text3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                  한도는 <span class="black1">낮게,</span>
+                </span>
+                <span class="text3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
+                  한도는 <span class="black2">적게,</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section5">
+      <div class="inner">
+        <div class="container">
+          <div class="row row1">
+            <div class="col-md-12" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>신용</h2>
+                <h3>금융 생활의 첫 걸음,<br>
+                  신용점수를 미리<br>
+                  무료로 관리하세요.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/icon1.png" alt="신용점수">
+                <h4>내 신용점수</h4>
+                <span class="text2">언제 어디서든, 원할 때 간편하게<br>
+                  KCB, NICE 신용점수를 한 곳에서 확인할 수<br>
+                  있어요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+              <div class="text-area">
+                <img src="./images/icon2.png" alt="신용점수 올리기">
+                <h4>신용점수 올리기</h4>
+                <span class="text2">통신비, 일반 납부내역 등의 서류를<br>
+                  토스에서 바로 제출해 신용점수를 올릴 수<br>
+                  있어요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row row1">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/icon3.png" alt="신용관리 알림">
+                <h4>신용관리 알림</h4>
+                <span class="text2">신용점수에 변동이 생기면 토스가 알람을 보내드려요.<br>
+                  나의 신용점수가 바뀔 때마다 바로 확인하세요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+              <div class="text-area">
+                <img src="./images/icon4.png" alt="신용관리 팁">
+                <h4>신용관리 팁</h4>
+                <span class="text2">신용점수 관리가 막막하다면?<br>
+                  신용관리 팁 콘텐츠를 한번 읽어보세요. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section6">
+      <div class="inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>투자</h2>
+                <h3>투자,<br>
+                  모두가 할 수 있도록</h3>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="img-area">
+                <img src="./images/app6.png" alt="투자 화면">
+                <div class=" text-box">
+                  <div class="text-box-left" data-aos="fade-right" data-aos-duration="2000">
+                    <p>이해하기 쉬운 용어<br>
+                      설명이 필요 없는<br>
+                      직관적인 화면 구성</p>
+                  </div>
+                  <div class="text-box-right" data-aos="fade-left" data-aos-duration="2000">
+                    <p>송금처럼 쉬운 구매 경험<br>
+                      그리고 투자 판단에<br>
+                      도움을 주는 콘텐츠까지</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-area" data-aos="fade-up" data-aos-duration="2000">
+                <p>별도 앱 설치 없이 토스에서 바로,<br>
+                  토스증권으로 나만의 투자를 시작해 보세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section7">
+      <div class="inner">
+        <div class="text-box">
+          <span class="text4" data-aos="fade-up" data-aos-duration="2000">꼭 필요했던 금융</span>
+        </div>
+      </div>
+    </section>
+    <section class="section8">
+      <div class="inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <h3>토스로<br>
+                  나에게 딱맞게</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="images/background3.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="text">내 문서함 <span class="black1">공공문서 확인부터 납부까지 한 번에
+                  </span></span>
+                <span class="text2">건강검진, 국가장학금 신청, 교통범칙금·과태료 납부.<br>
+                  그동안 종이로 받았던 문서들 꼼꼼히 챙기느라 고생했어요.<br>
+                  앞으로는 토스 내 문서함에서 간단히 받아보고 납부할 수 있어요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="images/background4.jpg">
+              </div>
+            </div>
+            <div class="col-md-4 pc" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+              <div class="img-area">
+                <img src="images/background5.jpg">
+              </div>
+              <div class="text-area" data-aos="fade-up" data-aos-duration="2000">
+                <p>또래보다 보험료는 적절하게 내고 있는지, 낸 만큼 보장받고 있는지 확인해 보세요.
+                  전문가와의 상담을 통해 내게 딱 맞는 보험을 추천 받고, 병원비를 간편하게 청구할 수 있어요.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="text">보험<br><span class="black1">조회부터 상담,<br>
+                    병원비 돌려받기를 간편하게
+                  </span></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-up" data-aos-duration="2000">
+              <div class="img-area">
+                <img src="./images/background6.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <span class="text">내 부동산 · 자동차<br><span class="black1">정기적으로 관리해보세요
+                  </span></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-area" data-aos="fade-left" data-aos-duration="2000">
+                <p>집과 자동차의 공통점은 잘 사서, 잘 관리하고, 잘 팔아야 한다는 것.
+                  시세조회부터 아파트 관리비 납부, 자동차 보험료 조회까지 부동산과 자동차 관리도 토스에서 시작해 보세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section9">
+      <div class="inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" data-aos="fade-right" data-aos-duration="2000">
+              <div class="text-area">
+                <h2>알면 좋은 금융</h2>
+                <h3>이런 서비스도<br>
+                  한번 써보세요</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/service1.png" alt="브랜드 캐시백">
+                <h4>브랜드 캐시백</h4>
+                <span class="text2">좋아하는 브랜드를 더 사랑할 수 있도록,
+                  매주 브랜드를 선택하고 결제 시 캐시백을 받아보세요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <div class="text-area">
+                <img src="./images/service2.png" alt="숨은 정부지원금 찾기">
+                <h4>숨은 정부지원금 찾기</h4>
+                <span class="text2">생각지도 못한 지원금이 기다리고 있어요.
+                  간단한 정보를 입력 후 받을 수 있는
+                  정부지원금을 확인해보세요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/service3.png" alt="광고 전화 그만 받기">
+                <h4>광고 전화 그만 받기</h4>
+                <span class="text2">시도 때도 없이 오던 광고 전화는 이제 그만.
+                  인증 한 번으로 카드 발급, 대출 권유 전화를 그만 받을 수 있어요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <div class="text-area">
+                <img src="./images/service4.png" alt="카드 혜택 추천">
+                <h4>카드 혜택 추천</h4>
+                <span class="text2">이제, 카드를 내 생활패턴에 맞게.
+                  여러 카드를 한 번에 비교하고 내게 꼭 맞는 카드를 선택해 보세요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/service5.png" alt="내 구독 서비스">
+                <h4>내 구독 서비스</h4>
+                <span class="text2">여기저기 흩어져있던 구독 서비스를 한 곳에서.
+                  가입해놓은 구독 서비스를 한 번에 확인하고 관리할 수 있어요.</span>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <div class="text-area">
+                <img src="./images/service6.png" alt="토스프라임">
+                <h4>토스프라임</h4>
+                <span class="text2">매일 토스와 함께 하신다면 가입해보세요.
+                  가입비 월 5,900원으로 토스 간편결제 시 6% 적립, 토스증권 국내주식 수수료 무료 혜택을 누려보세요.</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="2000">
+              <div class="text-area">
+                <img src="./images/service7.png" alt="ATM 현금 찾기">
+                <h4>ATM 현금 찾기</h4>
+                <span class="text2">카드 없이 휴대전화만 챙겨 나와도 됩니다.
+                  토스앱만 있다면 근처 ATM에서 현금을 찾을 수 있어요.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section10">
+      <img src="images/background7.jpg" alt="토스 사업">
+      <div class="inner">
+        <div class="text-area" data-aos="fade-up" data-aos-duration="2000">
+          <h3>사업도 토스와 함께</h3>
+          <span class="text2">사업을 시작하셨나요?<br>
+            사업의 시작부터 관리까지<br>
+            이제 토스와 함께 하세요.</span>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+              <div class="text-area">
+                <h4>토스결제</h4>
+                <span class="text2">합리적인 수수료,
+                  간편한 결제 경험으로 비용은
+                  절감하고 매출은 늘리세요.</span>
+                <a class="btn btn-primary" href="#" role="button">가맹점 문의하기</a>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+              <div class="text-area">
+                <h4>내 매출 장부</h4>
+                <span class="text2">내 매출 장부 따로 관리할 필요 없어요.
+                  총 매출, 총 입금, 총 지출을 보기 쉽게 알려드려요.</span>
+                <a class="btn btn-primary" href="#" role="button">자세히 알아보기</a>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
+              <div class="text-area">
+                <h4>토스페이먼츠</h4>
+                <span class="text2">시작하기 어려웠던 온라인 비즈니스,
+                  온라인 결제 토스페이먼츠와
+                  함께 해보세요.</span>
+                <a class="btn btn-primary" href="#" role="button">홈페이지 바로가기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="inner">
+        <div class="footer-nav clearfix">
+          <ul>
+            <span>서비스</span>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">공동인증서 관리</a></li>
+            <li><a href="#">계정 일시잠금</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">브랜드 리소스센터</a></li>
+          </ul>
+          <ul>
+            <span>회사</span>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">토스페이먼츠</a></li>
+            <li><a href="#">토스인슈어런스</a></li>
+            <li><a href="#">토스증권</a></li>
+            <li><a href="#">토스씨엑스</a></li>
+            <li><a href="#">토스뱅크</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">공고</a></li>
+          </ul>
+          <ul>
+            <span>문의</span>
+            <li><a href="#">사업 제휴</a></li>
+            <li><a href="#">광고 문의</a></li>
+            <li><a href="#">인증 사업 문의</a></li>
+            <li><a href="#">마케팅·PR</a></li>
+            <li><a href="#">IR</a></li>
+          </ul>
+          <ul>
+            <span>고객센터</span>
+            <li><a href="#">전화 : 1599-4905(24시간 연중무휴)</a></li>
+            <li><a href="#">이메일(고객전용):support@toss.im</a></li>
+            <li><a href="#">이메일(외부기관전용):safet@toss.im</a></li>
+            <li><a href="#">민원접수</a></li>
+          </ul>
+        </div>
+        <address>
+          <strong>㈜비바리퍼블리카</strong>
+          <span>사업자 등록번호 : 120-88-01280 | 대표 : 이승건<br>
+            호스팅 서비스 : 주식회사 비바리퍼블리카 | 통신판매업 신고번호 : 2014-서울강남-03377 사업자정보확인<br>
+            06236 서울특별시 강남구 테헤란로 142, 12층 (역삼동, 아크플레이스)<br>
+            고객센터 : 서울특별시 강남구 테헤란로 133, 8층 (역삼동, 한국타이어빌딩)</span>
+        </address>
+        <div class="personal-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li><a href="#">서비스 이용약관</a></li>
+                  <li><a href="#">통합 금융정보 서비스 약관</a></li>
+                  <li><a href="#">마이데이터 서비스 이용약관</a></li>
+                  <li><a href="#">이용자의 권리 및 유의사항</a></li>
+                  <li><a href="#">개인정보 처리방침</a></li>
+                  <li><a href="#">채용팀 개인정보 처리방침</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li><a href="#">영상정보처리기기 운영 관리 방침</a></li>
+                  <li><a href="#">위치기반서비스 이용약관</a></li>
+                  <li><a href="#">이용약관가맹점 고지사항</a></li>
+                  <li><a href="#">토스 전자서명인증업무준칙</a></li>
+                  <li><a href="#">토스 전자인증서비스 약관</a></li>
+                  <li><a href="#">금융소비자보호</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sns-area">
+          <ul>
+            <li><a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-facebook.svg" alt="페이스북"></a></li>
+            <li><a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-blog.svg" alt="블로거"></a></li>
+            <li><a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-naver.svg" alt="네이버"></a></li>
+            <li><a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-twitter.svg" alt="트위터"></a></li>
+            <li><a href="#"><img src="https://static.toss.im/assets/homepage/safety/icn-instagram.svg" alt="인스타그램"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
