@@ -166,7 +166,7 @@ ul li:nth-child(5) {
 }
 
 ul li:last-child::after {
-    box-shadow: -300px 300px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: -250px 250px 20px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -592,7 +592,7 @@ ul li:hover a {
 
 /* ----------info---------- */
 
-.weather {
+.ready {
     width: 200px;
     height: 300px;
     position: relative;
@@ -600,42 +600,5 @@ ul li:hover a {
     align-items: center;
     flex-direction: column;
     background: #3e3f46;
+    opacity: 0;
 }
-
-.w-info h2{
-    margin: 10px;
-}
-
-.w-info >div{
-    width: 180px;
-    margin: 5px 10px;
-}
-
-.weather .time{
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-
-.weather .des-area{
-    display: flex;
-    align-items: center;
-}
-
-.covid {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #3e3f46;
-}
-
-.covid >div{
-    height: 50px;
-    width: 180px;
-    line-height: 50px;
-}
-
-

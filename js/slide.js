@@ -1,6 +1,6 @@
 let slideh = 0;
         $(".home .right-remote").click(function () {
-            if (slideh < 1) {
+            if (slideh < 2) {
                 slideh++;
             } else {
                 slideh = 0;
@@ -16,7 +16,10 @@ let slideh = 0;
                 }, 400);
                 $(".navi").text("2");
             } else if (slideh == 2) {
-
+                $(".home .pages").animate({
+                    left: "-2000px"
+                }, 400);
+                $(".navi").text("3");
             }
         });
 
@@ -24,7 +27,7 @@ let slideh = 0;
             if (slideh > 0) {
                 slideh--;
             } else {
-                slideh = 1;
+                slideh = 2;
             }
             if (slideh == 0) {
                 $(".home .pages").animate({
@@ -37,7 +40,10 @@ let slideh = 0;
                 }, 400);
                 $(".navi").text("2");
             } else if (slideh == 2) {
-
+                $(".home .pages").animate({
+                    left: "-2000px"
+                }, 400);
+                $(".navi").text("3");
             }
         });
 

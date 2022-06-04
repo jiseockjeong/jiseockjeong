@@ -17,7 +17,7 @@ $(".works nav ul li:nth-child(1)").click(function () {
     $("section").stop().fadeOut();
     $(".home").fadeIn();
     $(".navi").text("1");
-    $(".navi2").text("/2");
+    $(".navi2").text("/3");
 });
 
 $(".works nav ul li:nth-child(3)").click(function () {
@@ -33,7 +33,7 @@ $(".me nav ul li:nth-child(1)").click(function () {
     $("section").stop().fadeOut();
     $(".home").fadeIn();
     $(".navi").text("1");
-    $(".navi2").text("/2");
+    $(".navi2").text("/3");
 });
 
 $(".me nav ul li:nth-child(2)").click(function () {

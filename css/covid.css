@@ -1,0 +1,32 @@
+.covid {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3e3f46;
+}
+
+.covid >div{
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.covid >div h3{
+    font-size: 15px;
+}
+
+.covid .c-title{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.covid >div img{
+    width: 20px;
+    margin-right: 10px;
+}

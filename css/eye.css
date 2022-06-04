@@ -1,0 +1,62 @@
+.eye-tracker {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3e3f46;
+}
+
+.face{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #FDAF75;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face::before{
+    content: '';
+    position: absolute;
+    background: #F24A72;
+    width: 100px;
+    height: 50px;
+    top:120px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
+}
+
+
+.eyes{
+    position: relative;
+    top:-20px;
+    display: flex;
+}
+
+.eyes .eye{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #fff;
+    margin: 0 15px;
+    border-radius: 50% ;
+}
+
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:20px;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    border-radius: 50%;
+}

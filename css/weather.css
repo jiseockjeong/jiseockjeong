@@ -1,0 +1,29 @@
+.weather {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3e3f46;
+}
+
+.w-info h2{
+    margin: 10px;
+}
+
+.w-info >div{
+    width: 180px;
+    margin: 5px 10px;
+}
+
+.weather .time{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.weather .des-area{
+    display: flex;
+    align-items: center;
+}
