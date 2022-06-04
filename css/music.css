@@ -1,0 +1,36 @@
+.music {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3e3f46;
+}
+
+
+.music input[type="file"]{
+    display: none;
+}
+
+label{
+    color:white;
+    height: 50px;
+    margin-top: 10px;
+    width: 180px;
+    background-color: #33a3ee;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.music canvas{
+    width: 180px;
+    height: 220px;
+    background-color: #000;
+    margin-top: 10px;
+}
+.input[type="file"]{
+    border: 0px solid transparent;
+}

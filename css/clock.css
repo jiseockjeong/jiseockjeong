@@ -1,0 +1,115 @@
+.clock {
+    width: 200px;
+    height: 300px;
+    background: #3e3f46;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.box300::after {
+    box-shadow: -400px 400px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.clock-frame {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/clock.png) no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.clock-frame::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #999;
+    border-radius: 50%;
+    background-color: #3E3F46;
+}
+
+.circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.circle i {
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: #999;
+    opacity: 1;
+    transform-origin: bottom;
+    /* transform: scaleY(0.5); */
+}
+
+.circle1 i {
+    background-color: #fff;
+    width: 4px;
+}
+
+.circle2 i {
+    background-color: #33A3EE;
+    width: 4px;
+}
+
+
+
+.circle1 {
+    width: 90px;
+    height: 90px;
+}
+
+.circle2 {
+    width: 60px;
+    height: 60px;
+}
+
+#time {
+    margin-top: 15px;
+    display: flex;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+#time div {
+    position: relative;
+    width: 30px;
+    text-align: center;
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after {
+    content: ':';
+    position: absolute;
+    right: -2px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

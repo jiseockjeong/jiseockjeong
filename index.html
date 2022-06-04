@@ -3,175 +3,318 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>지석의 작업공간</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3D : 정지석의 퍼블리셔 포트폴리오</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/clock.css">
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+    <link rel="stylesheet" type="text/css" href="css/music.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/28dbf32fd0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">물같은 남자</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>실패와 현재</h6>
-                    <p>과거 항공 정비를 목표로 대학에 진학했습니다. 하지만 코로나로 인해 진로에 문제가 생기며 다른 길을 찾아야 했던 저는 여러 가지 일을 배워보자는 마인드를 가지게 되었습니다.<br><br>
-                        그러다 우연한 계기로 코딩을 접하게 되었고 원하는 대로 구동되는 코딩의 매력을 느껴 개발자의 꿈을 가지게 되었습니다.<br><br>
-                        저는 개발자가 되고자 비교적 진입장벽이 낮은 웹 퍼블리셔를 목표로 준비했고 웹 퍼블리셔가 되고자 3가지 핵심 역량을 키웠습니다.</p>
-                    <h6>3가지 핵심 역량</h6>
-                    <p>첫 번째는 `소통`입니다.
-                        의사소통이 중요한 직군인 만큼 다양한 방식을 통해 `소통` 역량을 키웠습니다. 남에게 도움을 줄 수 있는 분야를 찾고 블로그 운영, 유튜브, 전자책 판매, 지식 in 등 다양한 플랫폼을 통해 월평균 10,000명이 넘는 이용자들에게 도움을 주었습니다. 부족한 점은 이용자의 피드백을 바탕으로 수정하면서 더 나은 서비스를 제공하고 있습니다.<br><br>
-                        두 번째는 `창의력`입니다. 웹 퍼블리셔가 되면 기존 웹사이트에서 느낄 수 없는 `색다른 경험`을 통해 이용자들의 재미를 느끼게 해주고 싶었습니다.
-                        `색다른 경험`을 만들기 위해 많은 사이트를 참고하며 일주일에 한 개씩 저만의 인터렉션을 만들며 공부하고 있습니다. 이렇게 얻게 된 코드 구성 능력과 응용 능력은 저만이 갖는 강점이라고 생각합니다.<br><br>
-                        세 번째는 `도전정신`입니다. 새로운 걸 받아들이고 변화에 적응하는 `도전정신`은 퍼블리셔의 핵심 역량이라고 생각합니다. 작년 한 해만 하더라도 11가지의 도전을 했습니다. 비록 실패한 도전도 있지만 실패함으로써 얻는 경험은 가장 큰 자산으로 남아 저에게 큰 도움이 됩니다. 실패한 경험을 통해 웹 퍼블리셔라는 목표를 세웠듯이 앞으로도 계속해서 도전을 거듭해 더 나은 미래를 목표로 달려가려 합니다.</p>
-                    <h6>물이 되어라.</h6>
-                    <p>저를 가장 잘 표현하는 단어는 ‘물’입니다. 자신이 담긴 용기에 따라 달라지며 상황에 유연하게 대처하는 물의 성질이 저와 많이 닮았습니다.
-
-                        저 역시 어디를 가서 무슨 일을 하던 ‘용기’에 알맞게 적응을 잘하고 남에게 피해를 주는 걸 극도로 싫어하는 성격이라 소속원들과 잘 어울려 군 복무 당시 대대 모범 병사 상을 받은 경험이 있습니다.<br><br>
-
-                        제 성격의 단점은 감성적으로 일을 처리하기보단 이성적으로 처리하기에 냉정해 보일 수 있다는 점입니다.<br><br>
-
-                        다르게 이야기하자면 이성적으로 판단하는 장점 때문에 단체나 모임에서 결정권이나 영향력을 가지는 편입니다. 그런 저에게 고민이나 문제 해결 상담을 많이 하다 보니 언어 구사 능력이나 상황 대처 능력이 뛰어나다 자부합니다.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="top">
-        <span>TOP</span>
-    </div>
-
     <div class="wrap">
-        <div class="menu">
-            <div class="inner">
-               <div class ="util">
-                   <span>다크모드</span>
-                   <div class ="dark">
-                       <div class ="dark-on"></div>
-                   </div>
-               </div>
-                <div class="profile">
-                    <h4>지석의 작업공간</h4>
-                    <img src="images/me.jpg" alt="지석">
-                    <p>somaeburi@gmail.com<br>
-                        010-6349-5319</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        이력서
-                    </button>
-                </div>
-                <nav>
-                    <span>메뉴</span>
-                    <ul>
-                        <li class="on">전체보기</li>
-                        <li>반응형 &amp; 적응형</li>
-                        <li>풀페이지</li>
-                        <li>인터렉션</li>
-                        <li>프레임워크</li>
-                        <li>디자인</li>
-                    </ul>
-                </nav>
-                <div class ="page">
-                    <span>개인 사이트</span>
-                    <button class="github" type="button"><a href ="https://github.com/jiseockjeong/jiseockjeong.git" target="_blank"><img src ="./images/github.png" alt ="github"><span>github</span></a></button>
-                </div>
+        <div class="inner">
+            <div class="main-title">
+                <h2>지석의 심플 3D</h2>
+                <h1>퍼블리셔 포트폴리오</h1>
+                <p>해상도 1024px 미만에서는 지원하지 않습니다.</p>
             </div>
-        </div>
-        <div class="home clearfix">
-            <div class="cont-box">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 int">
-                            <div class="frame">
-                                <img src="images/mlb.png" class="img-fluid" alt="mlb">
-                                <span class="badge text-bg-success">인터렉션</span>
-                                <span class="badge text-bg-primary">인기</span>
-                                <h5>MLB X AESPA 리디자인</h5>
-                                <p>2022.05</p>
-                                <a class="btn btn-primary" href="./portfolio/mlb/index.html" target="_blank" role="button">보러가기</a>
+            <div class="main-text">
+                <span class="navi">1</span><span class=navi2>/2</span>
+                <h1>Simple 3D portfolio</h1>
+                <p>Copyright © ji seock jeong, All rights reserved.</p>
+            </div>
+            <section class="home">
+                <div class="remote">
+                    <div class="left-remote remote-btn"></div>
+                    <div class="right-remote remote-btn"></div>
+                </div>
+                <div class="pages">
+                    <div class="page1 page">
+                        <nav>
+                            <span class="title">메뉴</span>
+                            <ul>
+                                <li class="item-3d on"><a href="#">Home</a></li>
+                                <li class="item-3d"><a href="#">Works</a></li>
+                                <li class="item-3d"><a href="#">About me</a></li>
+                            </ul>
+                        </nav>
+                        <div class="clock item-3d box300">
+                            <span class="title">시계</span>
+                            <div class="clock-frame">
+                                <div class="circle" id="sc"><i></i></div>
+                                <div class="circle circle1" id="mn"><i></i></div>
+                                <div class="circle circle2" id="hr"><i></i></div>
+                            </div>
+                            <div id="time">
+                                <div id="hour">00</div>
+                                <div id="minutes">00</div>
+                                <div id="seconds">00</div>
+                                <div id="ampm">AM</div>
                             </div>
                         </div>
-                        <div class="col-xl-4 int">
-                            <div class="frame">
-                                <img src="images/campari.png" class="img-fluid" alt="캄파리">
-                                <span class="badge text-bg-success">인터렉션</span>
-                                <h5>캄파리 리디자인</h5>
-                                <p>2022.05</p>
-                                <a class="btn btn-primary" href="./portfolio/campari/index.html" target="_blank" role="button">보러가기</a>
+                        <div class="calculator item-3d box300">
+                            <span class="title">계산기</span>
+                            <div id="display">
+                            </div>
+                            <div class="buttons">
+                                <div class="button c-left">C</div>
+                                <div class="button">/</div>
+                                <div class="button">*</div>
+                                <div class="button">&larr;</div>
+                                <div class="button c-left">7</div>
+                                <div class="button">8</div>
+                                <div class="button">9</div>
+                                <div class="button">-</div>
+                                <div class="button c-left">4</div>
+                                <div class="button">5</div>
+                                <div class="button">6</div>
+                                <div class="button">+</div>
+                                <div class="button c-left">1</div>
+                                <div class="button">2</div>
+                                <div class="button">3</div>
+                                <div class="button">.</div>
+                                <div class="button c-left">(</div>
+                                <div class="button">0</div>
+                                <div class="button">)</div>
+                                <div id="equal" class="button">=</div>
                             </div>
                         </div>
-                        <div class="col-xl-4 rp full">
-                            <div class="frame">
-                                <img src="images/chevrolet.png" class="img-fluid" alt="쉐보레">
-                                <span class="badge text-bg-warning">적응형</span><span class="badge text-bg-dark">풀페이지</span>
-                                <span class="badge text-bg-primary">인기</span>
-                                <h5>쉐보레 리디자인</h5>
-                                <p>2022.05</p>
-                                <a class="btn btn-primary" href="./portfolio/chevrolet/index.html" target="_blank" role="button">보러가기</a>
-                            </div>
+                    </div>
+                    <div class="page2 page">
+                        <div class="music item-3d box300">
+                            <span class="title">음악</span>
+                            <canvas id="canvas"></canvas>
+                            <audio id="audio"></audio>
+                            <input type="file" id="thefile" accept="audio/*">
+                            <label for="thefile">
+                                노래 파일을 업로드하세요.
+                            </label>
                         </div>
-                        <div class="col-xl-4 int">
-                            <div class="frame">
-                                <img src="images/hanatour.png" class="img-fluid" alt="하나투어">
-                                <span class="badge text-bg-success">인터렉션</span>
-                                <h5>하나투어 리디자인</h5>
-                                <p>2022.05</p>
-                                <a class="btn btn-primary" href="./portfolio/hanatour/index.html" target="_blank" role="button">보러가기</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 des">
-                            <div class="frame">
-                                <img src="images/yourgg.png" class="img-fluid" alt="유어지지">
-                                <span class="badge text-bg-info">디자인</span>
-                                <h5>유어지지 대시보드 UI</h5>
-                                <p>2022.04</p>
-                                <a class="btn btn-primary" href="./portfolio/yourgg.pdf" target="_blank" role="button">보러가기</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 rp">
-                            <div class="frame">
-                                <img src="images/wine25.png" class="img-fluid" alt="와인25">
-                                <span class="badge text-bg-danger">반응형</span>
-                                <h5>와인25 리디자인</h5>
-                                <p>2022.03</p>
-                                <a class="btn btn-primary" href="./portfolio/wine25/index.html" target="_blank" role="button">보러가기</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 full int">
-                            <div class="frame">
-                                <img src="images/peaky.png" class="img-fluid" alt="피키블라인더스">
-                                <span class="badge text-bg-dark">풀페이지</span><span class="badge text-bg-success">인터렉션</span>
-                                <h5>피키블라인더스 팬페이지</h5>
-                                <p>2022.01</p>
-                                <a class="btn btn-primary" href="./portfolio/peaky/index.html" target="_blank" role="button">보러가기</a>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 full rp">
-                            <div class="frame">
-                                <img src="images/ng.png" class="img-fluid" alt="내셔널지오그래픽">
-                                <span class="badge text-bg-dark">풀페이지</span>
-                                <span class="badge text-bg-danger">반응형</span>
-                                <span class="badge text-bg-primary">인기</span>
-                                <h5>내셔널지오그래픽 리디자인</h5>
-                                <p>2021.10</p>
-                                <a class="btn btn-primary" href="./portfolio/ng/index.html" target="_blank" role="button">보러가기</a>
-                            </div>
+                        </script>
+                        <div class="weather item-3d box300">
+                            <span class="title">날씨</span>
+                            <div class="w-info">
+                                <h2 class="city">서울</h2>
+                                <div class="time"></div>
+                                <div class="des-area">
+                                    <div class="icon"></div>
+                                    <div class="description"></div>
+                                </div>
+                                <div class="temp">현재 온도 : </div>
+                                <div class="humidity">습도 : </div>
+                                <div class="wind">풍속 : </div>
+                                <div class="wind-deg">풍향 : </div>
 
+                            </div>
+                        </div>
+                        <div class="covid item-3d box300">
+                            <span class="title">코로나 확진자</span>
+                            <div class="c-day">기준 일 : 준비중</div>
+                            <div class="c-time">기준 시간 : 준비중</div>
+                            <div class="c-decide">일일 확진자 : 준비중</div>
+                            <div class="c-death">일일 사망자 : 준비중</div>
+                            <div class="c-example">일일 의심환자 : 준비중</div>
+                            <div class="c-rate">누적 확진률 : 준비중</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="works">
+                <div class="remote">
+                    <div class="left-remote remote-btn"></div>
+                    <div class="right-remote remote-btn"></div>
+                </div>
+                <div class="pages">
+                    <div class="page1 page">
+                        <nav>
+                            <span class="title">메뉴</span>
+                            <ul>
+                                <li class="item-3d"><a href="#">Home</a></li>
+                                <li class="item-3d on"><a href="#">Works</a></li>
+                                <li class="item-3d"><a href="#">About me</a></li>
+                            </ul>
+                        </nav>
+                        <div class="work item-3d box300">
+                            <span class="title">토스</span>
+                            <img src="images/toss.png" alt="toss">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.05</p>
+                            <a href="./portfolio/toss/index.html" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">MLB</span>
+                            <img src="images/mlb.png" alt="mlb">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.05</p>
+                            <a href="./portfolio/mlb/index.html" target="_blank">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="page2 page">
+                        <div class="work item-3d box300">
+                            <span class="title">쉐보레</span>
+                            <img src="images/chevrolet.png" alt="chevrolet">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.05</p>
+                            <a href="./portfolio/chevrolet/index.html" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">하나투어</span>
+                            <img src="images/hanatour.png" alt="hanatour">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.05</p>
+                            <a href="./portfolio/hanatour/index.html" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">캄파리</span>
+                            <img src="images/campari.png" alt="campari">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.05</p>
+                            <a href="./portfolio/campari/index.html" target="_blank">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="page3 page">
+                        <div class="work item-3d box300">
+                            <span class="title">your.gg</span>
+                            <img src="images/yourgg.png" alt="yourgg">
+                            <p class="loc">디자인 100%<br>
+                            </p>
+                            <p class="date">2022.04</p>
+                            <a href="./portfolio/yourgg.pdf" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">내셔널지오그래픽</span>
+                            <img src="images/ng.png" alt="national geographic">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.03</p>
+                            <a href="./portfolio/ng/index.html" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">피키블라인더스</span>
+                            <img src="images/peaky.png" alt="peaky blinders">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.03</p>
+                            <a href="./portfolio/peaky/index.html" target="_blank">보러가기</a>
+                        </div>
+                    </div>
+                    <div class="page4 page">
+                        <div class="work item-3d box300">
+                            <span class="title">와인25</span>
+                            <img src="images/wine25.png" alt="wine25">
+                            <p class="loc">디자인 100%<br>
+                                퍼블리싱 100%</p>
+                            <p class="date">2022.01</p>
+                            <a href="./portfolio/wine25/index.html" target="_blank">보러가기</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">준비중</span>
+                            <div class="loading">
+                                <img src="./images/loading.png" alt="loading">
+                            </div>
+                            <p class="loc">준비중<br>
+                            </p>
+                            <p class="date">준비중</p>
+                            <a href="#">준비중</a>
+                        </div>
+                        <div class="work item-3d box300">
+                            <span class="title">준비중</span>
+                            <div class="loading">
+                                <img src="./images/loading.png" alt="loading">
+                            </div>
+                            <p class="loc">준비중<br>
+                            </p>
+                            <p class="date">준비중</p>
+                            <a href="#">준비중</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="me">
+                <div class="remote">
+                    <div class="left-remote remote-btn"></div>
+                    <div class="right-remote remote-btn"></div>
+                </div>
+                <div class="pages">
+                    <div class="page1 page">
+                        <nav>
+                            <span class="title">메뉴</span>
+                            <ul>
+                                <li class="item-3d"><a href="#">Home</a></li>
+                                <li class="item-3d"><a href="#">Works</a></li>
+                                <li class="item-3d on"><a href="#">About me</a></li>
+                            </ul>
+                        </nav>
+                        <div class="info box300 info-ani">
+                            <span class="title">개인 정보</span>
+                            <ul>
+                                <li class="item-3d">이름?</li>
+                                <li class="item-3d">생년월일?</li>
+                                <li class="item-3d">거주지?</li>
+                                <li class="item-3d">MBTI?</li>
+                                <li class="item-3d github"><a href="https://github.com/jiseockjeong/jiseockjeong.git"
+                                        target="_blank">git hub</a></li>
+                                <div class="blank"></div>
+                            </ul>
+                        </div>
+                        <div class="info box300">
+                            <span class="title">자격증</span>
+                            <ul>
+                                <li class="item-3d">웹 디자인 기능사</li>
+                                <div class="blank blank5"></div>
+                            </ul>
                         </div>
 
                     </div>
+                    <div class="page2 page">
+                        <div class="info box300">
+                            <span class="title">수상내역</span>
+                            <ul>
+                                <li class="item-3d">20전비 모범병사</li>
+                                <div class="blank blank5"></div>
+                            </ul>
+                        </div>
+                        <div class="info box300">
+                            <span class="title">사용 언어</span>
+                            <ul>
+                                <li class="item-3d">Html5</li>
+                                <li class="item-3d">Css3</li>
+                                <li class="item-3d">Javascript</li>
+                                <li class="item-3d">Sass</li>
+                                <div class="blank blank2"></div>
+                            </ul>
+                        </div>
+                        <div class="info box300">
+                            <span class="title">프레임 워크</span>
+                            <ul>
+                                <li class="item-3d">jQuery</li>
+                                <li class="item-3d">Bootstrap</li>
+                                <div class="blank blank4"></div>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+
         </div>
     </div>
-</body></html>
+    <script src="js/clock.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/covid.js"></script>
+</body>
+
+</html>
